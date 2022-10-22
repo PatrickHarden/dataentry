@@ -1,0 +1,25 @@
+export interface Specifications{
+    leaseType: string,
+    leaseRateType?: string,
+    measure: string,
+    leaseTerm: string,
+    minSpace: number,
+    maxSpace: number,
+    totalSpace: number,
+    minPrice: number,
+    maxPrice: number,
+    salePrice: number,
+    plusSalesTax?: boolean,
+    includingSalesTax?: boolean,
+    contactBrokerForPrice: boolean,
+    showPriceWithUoM: boolean,
+    taxModifer?: string
+    bedrooms?: string,
+    currencyCode: string,
+    spaceUnitOfMeasure?: string,
+    autoCalculateMinSpace?: boolean,
+    autoCalculateTotalSpace?: boolean,
+    autoCalculateMinPrice?: boolean,
+    autoCalculateMaxPrice?: boolean,
+    autoCalculateTotalPrice?: boolean
+}

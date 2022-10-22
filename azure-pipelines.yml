@@ -1,0 +1,256 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+# https://github.com/microsoft/azure-pipelines-yaml
+
+trigger:
+  batch: true
+  branches:
+    include:
+      - develop
+
+pr: none
+
+name: $(MajorMinorVersion).$(Rev:r)
+
+variables:
+  buildConfiguration: "Release"
+  dateTime: $[format('{0:yyyy}-{0:MM}-{0:dd}T{0:HH}:{0:mm}:{0:ss}Z', pipeline.startTime)]
+
+stages:
+  - stage: Build
+    displayName: Build stage
+    jobs:
+      - job: Build
+        displayName: Build
+        pool:
+          name: "Global Listings Ubuntu"
+        steps:
+          - task: PowerShell@2
+            displayName: "Set environment variables"
+            inputs:
+              targetType: 'inline'
+              script: |
+                  $startTime = (Get-Date).ToString('yyyy-MM-ddThh:mm:ssZ')                
+                  echo "##vso[task.setvariable variable=startTime]$startTime"  
+                  
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: 'curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -c 5.0'
+                         
+          - task: UseDotNet@2
+            displayName: "Use .NET 5 sdk"
+            inputs:
+              packageType: sdk
+              version: 5.0.202
+              installationPath: $(Agent.ToolsDirectory)/dotnet
+
+          - script: dotnet tool install dotnet-sonarscanner -g
+            displayName: dotnet install sonarscanner
+            condition: and(succeeded(), in(variables['Agent.Name'], 'Azure Pipelines'))
+            continueOnError: true
+            enabled: false
+            
+          - script: dotnet sonarscanner begin /k:"$(SonarQubeKey)" /d:sonar.login="$(SonarQubeToken)" /n:"$(SonarQubeName)" /v:"$(Build.BuildNumber)" /d:sonar.host.url=$(SonarQubeUrl) /d:sonar.cs.opencover.reportsPaths="**DataEntry.Test\coverage.opencover.xml" /d:sonar.typescript.lcov.reportPaths="ClientApp/coverage/lcov.info" /d:sonar.coverage.exclusions="**tests.cs, **.spec.tsx, **.spec.ts, **.stories.tsx" /d:sonar.exclusions="Migrations/**/*, ClientApp/scripts/**, **storybook/**/*, **storybook-static/**/*, ClientApp/config/**"
+            displayName: dotnet sonarscanner begin
+            enabled: false
+            
+          - task: SonarQubePrepare@4
+            inputs:
+              SonarQube: 'sq.cbre.com'
+              scannerMode: 'MSBuild'
+              projectKey: 'globallistings-dataentry'
+              projectName: 'globallistings-dataentry'
+              projectVersion: '$(Build.BuildNumber)'
+              extraProperties: |
+                sonar.cs.opencover.reportsPaths="**DataEntry.Test\coverage.opencover.xml"
+                sonar.javascript.lcov.reportPaths="ClientApp/coverage/lcov.info"
+                sonar.coverage.exclusions="**tests.cs, **.spec.tsx, **.spec.ts, **.stories.tsx, **storybook/**/*"
+                sonar.exclusions="*/Migrations/**", "ClientApp/scripts/**", "**storybook/**/*", "**storybook-static/**/*", "ClientApp/config/**"
+            continueOnError: true
+
+          - task: DotNetCoreCLI@2
+            inputs:
+              command: test
+              publishTestResults: True
+              arguments: "/p:CollectCoverage=true /p:CoverletOutputFormat=opencover"
+            displayName: "dotnet test"
+
+          # - task: DotNetCoreCLI@2
+          #   displayName: "Install dotnet-ef"
+          #   inputs:
+          #     command: 'custom'
+          #     custom: 'tool'
+          #     arguments: 'install --global dotnet-ef'
+
+          - task: DotNetCoreCLI@2
+            inputs:
+              command: 'custom'
+              custom: 'ef'
+              arguments: 'migrations script -p $(System.DefaultWorkingDirectory)/DataEntry/dataentry.csproj -c dataentry.Data.DbContext.DataEntryContext -i -o $(Build.ArtifactStagingDirectory)/DataEntry/SQL/MigrateDataEntryContext.sql'
+            displayName: 'Generate Migration SQL for DataEntryContext'
+              
+          - task: DotNetCoreCLI@2
+            inputs:
+              command: 'custom'
+              custom: 'ef'
+              arguments: 'migrations script -p $(System.DefaultWorkingDirectory)/DataEntry/dataentry.csproj -c dataentry.Data.DbContext.UserContext -i -o $(Build.ArtifactStagingDirectory)/DataEntry/SQL/MigrateUserContext.sql'
+            displayName: 'Generate Migration SQL for UserContext'
+
+          - task: CopyFiles@2
+            inputs:
+              contents: "executeSQL.sh"
+              targetFolder: $(Build.ArtifactStagingDirectory)/DataEntry/SQL
+            displayName: "Copy SQL command script to Artifact Staging"          
+
+          - task: Npm@1
+            inputs:
+              command: custom
+              customCommand: install
+              workingDir: DataEntry/ClientApp
+            displayName: "npm install"
+
+          - task: Npm@1
+            inputs:
+              command: custom
+              customCommand: run build
+              workingDir: DataEntry/ClientApp
+            displayName: "npm build"
+
+          - task: Npm@1
+            inputs:
+              command: custom
+              customCommand: run test:ci
+              workingDir: DataEntry/ClientApp
+            displayName: "npm test:ci"
+
+          - script: dotnet sonarscanner end /d:sonar.login="$(SonarQubeToken)"
+            displayName: dotnet sonarscanner end
+            enabled: false
+
+          - task: SonarQubeAnalyze@4
+            displayName: 'Run SonarQube Code Analysis'
+            continueOnError: true
+            
+          - task: SonarQubePublish@4
+            displayName: 'Publish Quality Gate Result'
+            continueOnError: true
+
+          - task: DotNetCoreCLI@2
+            inputs:
+              command: publish
+              publishWebProjects: True
+              arguments: "--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/DataEntry"
+              zipAfterPublish: True
+            displayName: "dotnet publish DataEntry"
+
+          - task: DotNetCoreCLI@2
+            inputs:
+              command: publish
+              publishWebProjects: False
+              workingDirectory: "$(System.DefaultWorkingDirectory)/dataentry.Publishing"
+              arguments: "--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/DataEntry.Publishing"
+              zipAfterPublish: True
+            displayName: "dotnet publish DataEntry.Publishing"
+
+          - task: CopyFiles@2
+            inputs:
+              contents: "AzureARM/**"
+              targetFolder: $(Build.ArtifactStagingDirectory)
+            displayName: "Copy Azure Deploy script to Artifact Staging"
+
+          # - task: CopyFiles@2
+          #   inputs:
+          #     contents: "DataEntry/WatermarkDetection/**"
+          #     targetFolder: $(Build.ArtifactStagingDirectory)/DataEntry.Publishing/WatermarkDetection
+          #   displayName: "Copy Watermark Detection to Artifact Staging"
+
+          - task: CopyFiles@2
+            inputs:
+              contents: "dataentry.Publishing/SQL/**"
+              targetFolder: $(Build.ArtifactStagingDirectory)
+            displayName: "Copy SQL scripts to Artifact Staging"
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              pathtoPublish: $(build.artifactStagingDirectory)
+              artifactName: drop
+     
+          - script: dotnet sonarscanner end /d:sonar.login="$(SonarQubeToken)"
+            displayName: dotnet sonarscanner end
+            continueOnError: true
+            enabled: false
+            
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 3 -t 95'
+            displayName: Post-Gate2 Code Checkin
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 50 -t 242'
+            displayName: Post-Gate3 Build Artifacts
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 4 -t 242'
+            displayName: Post-Gate4 Code Build
+            continueOnError: true
+            
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 56 -t 242'
+            displayName: Post-Gate5 Secret Management
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 54 -t 95'
+            displayName: Post-Gate6 Code Review
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 5 -t 42'
+            displayName: Post-Gate7 Unit Test
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 45 -t 22'
+            displayName: Post-Gate8 Static Code Analysis
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs: 
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 19 -t 22'
+            displayName: Post-Gate9 Security Test
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs: 
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 34 -t 3'
+            displayName: Post-Gate10 Dynamic Env Deploy & Release
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs: 
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 16 -t 19'
+            displayName: Post-Gate11 Regression Test
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs: 
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 37 -t 3'
+            displayName: Post-Gate15 Logging and Alerting
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs: 
+              script: currTime=$(date +'%Y-%m-%dT%H:%M:%SZ') && chmod +x ./metrics.sh; ./metrics.sh -a 786 -p 20 -t 183 -v $(Build.BuildNumber) -c $(Build.BuildNumber) -z 1 -f 0 -b 0 -s $(startTime) -e ${currTime}
+            displayName: Post-Gate12 Performance Test Metrics
+            continueOnError: true	

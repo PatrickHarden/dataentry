@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "value": "cbrelistings-dev-sea-dataentry"
+    },
+    "appServicePlan": {
+      "value": "P1V2"
+    },
+    "storageAccountName": {
+      "value": "cbdevseade"
+    },
+    "keyVaultName": {
+      "value": "cbdevseade"
+    },
+    "postgresAdminLogin": {
+      "value": "cbreadmin"
+    },
+    "StoreSettings__StoreApiServiceAccountUsername": {
+      "value": "US_SVC_GLDE_UAT"
+    },
+    "StoreSettings__HomeSiteId": {
+      "value": "sg-comm"
+    },
+    "StoreSettings__ListingOrigin": {
+      "value": "SG-SMPL"
+    },
+    "SearchApiEndPoint": {
+      "value": "http://actualuat.listingssearch.cbre.eu/api/propertylistings/query?"
+    },
+    "app-Admins": {
+      "value": "Ragini.Singhal@cbre.com;Srijaa.Datta@cbre.com;Ajeet.Singh@cbre.com;Tina.Le@cbre.com;Magdelyne.Cai@cbre.com;Tawan.Teo@cbre.com.sg;Jeachris.Ng@cbre.com;Nicholas.Lee3@cbre.com;Alida.Hoo@cbre.com;Patricia.Yong@cbre.com;Serene.Tong@cbre.com.sg"
+    },
+    "ASPNETCORE_ENVIRONMENT": {
+      "value": "ProdSG"
+    },
+    "corsAllowedDomain": {
+      "value": "https://dataentry.cbrelistings.com/"
+    },
+	"postgresSkuTier": {
+	  "value": "Basic"
+	},
+	"postgresSkuFamily": {
+	  "value": "Gen5"
+	},
+	"postgresSkuCapacity": {
+	  "value": "2"
+	}
+  }
+}

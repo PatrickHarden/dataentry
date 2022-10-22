@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components contact-card renders according to snapshot 1`] = `
+<styled.div>
+  <div
+    className="contactLeftCol"
+  >
+    <ImageAvatar
+      allowUpload={false}
+      avatarSize="65px"
+      imageURL=""
+      placeholder="J S"
+      placeholderSize="20px"
+    />
+  </div>
+  <div
+    className="contactRightCol"
+  >
+    <span
+      onClick={[Function]}
+    >
+      <img
+        src="deleteIcon.png"
+      />
+    </span>
+    <styled.p
+      id="contactNameWrapper"
+    >
+      Jane
+       
+      Smith
+    </styled.p>
+    <styled.p
+      id="contactLocationWrapper"
+    >
+      Dallas, TX
+    </styled.p>
+    <p
+      id="emailWrapper"
+    >
+      <a
+        href="mailto: jane.smith@cbre.com"
+      >
+        <img
+          src="icon-email.png"
+        />
+        jane.smith@cbre.com
+      </a>
+    </p>
+    <p
+      id="phoneWrapper"
+    >
+      <a
+        href="tel: (202) 345-5678"
+      >
+        <img
+          src="icon-phone.png"
+        />
+        (202) 345-5678
+      </a>
+    </p>
+  </div>
+</styled.div>
+`;

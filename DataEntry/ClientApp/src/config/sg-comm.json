@@ -1,0 +1,4856 @@
+{
+    "intercomm": false,
+    "supportLink": true,
+    "siteId": "sg-comm",
+    "googleTrackingId": "UA-149340346-1",
+    "featureFlags": {
+        "hideStateOrProvince": false,
+        "leaseRateTypeEnabled": true,
+        "defaultWaterMarkTrue": true,
+        "unpublishFromMIQExport": true,
+        "autoCalculateSizeAndPrice": true
+    },
+    "addToTeam": {
+        "properties": [
+            {
+                "propertyType": "Office",
+                "listingType": "lease",
+                "teamName": "SG Office Team"
+            },
+            {
+                "propertyType": "Office",
+                "listingType": "sale",
+                "teamName": "SG Capital Markets Team"
+            },
+            {
+                "propertyType": "Office",
+                "listingType": "salelease",
+                "teamName": "SG Capital Markets Team,SG Office Team"
+            },
+            {
+                "propertyType": "Retail",
+                "listingType": "lease",
+                "teamName": "SG Retail Team"
+            },
+            {
+                "propertyType": "Retail",
+                "listingType": "sale",
+                "teamName": "SG Capital Markets Team"
+            },
+            {
+                "propertyType": "Retail",
+                "listingType": "salelease",
+                "teamName": "SG Capital Markets Team,SG Retail Team"
+            },
+            {
+                "propertyType": "Industrial",
+                "listingType": "sale",
+                "teamName": "SG Industrial Team"
+            },
+            {
+                "propertyType": "Industrial",
+                "listingType": "lease",
+                "teamName": "SG Industrial Team"
+            },
+            {
+                "propertyType": "Industrial",
+                "listingType": "salelease",
+                "teamName": "SG Industrial Team"
+            },
+            {
+                "propertyType": "Residential",
+                "listingType": "sale",
+                "teamName": "SG Residential Team"
+            },
+            {
+                "propertyType": "Residential",
+                "listingType": "lease",
+                "teamName": "SG Residential Team"
+            },
+            {
+                "propertyType": "Residential",
+                "listingType": "salelease",
+                "teamName": "SG Residential Team"
+            },
+            {
+                "propertyType": "Hospitality",
+                "listingType": "sale",
+                "teamName": "SG Capital Markets Team"
+            },
+            {
+                "propertyType": "Hospitality",
+                "listingType": "lease",
+                "teamName": "SG Capital Markets Team"
+            },
+            {
+                "propertyType": "Hospitality",
+                "listingType": "salelease",
+                "teamName": "SG Capital Markets Team"
+            },
+            {
+                "propertyType": "Shophouse",
+                "listingType": "sale",
+                "teamName": "SG Capital Markets Team"
+            },
+            {
+                "propertyType": "Shophouse",
+                "listingType": "lease",
+                "teamName": "SG Retail Team"
+            },
+            {
+                "propertyType": "Shophouse",
+                "listingType": "salelease",
+                "teamName": "SG Capital Markets Team,SG Retail Team"
+            },
+            {
+                "propertyType": "Flex",
+                "listingType": "lease",
+                "teamName": "SG Office Team"
+            },
+            {
+                "propertyType": "Flex",
+                "listingType": "sale",
+                "teamName": "SG Capital Markets Team"
+            },
+            {
+                "propertyType": "Flex",
+                "listingType": "salelease",
+                "teamName": "SG Capital Markets Team,SG Office Team"
+            }
+        ]
+    },
+    "defaultCultureCode": "en-SG",
+    "teamsEnabled": true,
+    "exportEnabled": false,
+    "duplicateEnabled": true,
+    "miqCountryCode": "SG",
+    "defaultMeasurement": "sqft",
+    "currencyCode": "SGD",
+    "currencySymbol": "S$",
+    "watermark": true,
+    "displayMIQId": true,
+    "insightsEnabled": false,
+    "map": {
+        "component": "google",
+        "places": {
+            "api": "google",
+            "limitSearch": true,
+            "limitCountryCodes": [
+                "sg"
+            ]
+        }
+    },
+    "coordinates": {
+        "lat": 0,
+        "lng": 0
+    },
+    "propertyType": {
+        "show": true,
+        "label": "Property Type*",
+        "required": true,
+        "clearSpacesOn": [
+            "flex"
+        ],
+        "options": [
+            {
+                "label": "Office",
+                "value": "office",
+                "order": 1,
+                "color": "#69BE28"
+            },
+            {
+                "label": "Retail",
+                "value": "retail",
+                "order": 2,
+                "color": "#EC058E"
+            },
+            {
+                "label": "Industrial",
+                "value": "industrial",
+                "order": 3,
+                "color": "#DF7909"
+            },
+            {
+                "label": "Flexible Space",
+                "value": "flex",
+                "order": 4,
+                "color": "#00B2DD"
+            },
+            {
+                "label": "Residential",
+                "value": "residential",
+                "order": 5,
+                "color": "#e35c02"
+            },
+            {
+                "label": "Shophouse",
+                "value": "shophouse",
+                "order": 6,
+                "subPropertyType": "shophouse",
+                "color": "#04bacf"
+            },
+            {
+                "label": "Hospitality",
+                "value": "hospitality",
+                "order": 7,
+                "color": "#04bacf"
+            }
+        ]
+    },
+    "sortType": {
+        "show": false,
+        "label": "Property Type*",
+        "required": false,
+        "clearSpacesOn": [
+            "flex"
+        ],
+        "options": [
+            {
+                "label": "SG Office Team",
+                "value": "office,flex",
+                "order": 1,
+                "color": "#69BE28"
+            },
+            {
+                "label": "SG Retail Team",
+                "value": "retail,shophouse",
+                "order": 2,
+                "color": "#EC058E"
+            },
+            {
+                "label": "SG Industrial Team",
+                "value": "industrial",
+                "order": 3,
+                "color": "#DF7909"
+            },
+            {
+                "label": "SG Capital Markets Team",
+                "value": "office,hospitality,retail,shophouse,flex",
+                "order": 4,
+                "color": "#00B2DD"
+            },
+            {
+                "label": "SG Residential Team",
+                "value": "residential",
+                "order": 5,
+                "color": "#e35c02"
+            }
+        ]
+    },
+    "propertySubType": {
+        "show": true,
+        "label": "Property SubType*",
+        "shophouse": [
+            {
+                "label": "Office/Shophouse",
+                "value": "office",
+                "order": 1
+            },
+            {
+                "label": "Residential/Shophouse",
+                "value": "residential",
+                "order": 2
+            },
+            {
+                "label": "Retail/Shophouse",
+                "value": "retail",
+                "order": 3
+            }
+        ]
+    },
+    "status": {
+        "show": true,
+        "label": "Building/Property Status",
+        "required": false,
+        "prompt": "Select Status...",
+        "options": [
+            {
+                "label": "Existing",
+                "value": "available",
+                "order": 1
+            },
+            {
+                "label": "Under Construction",
+                "value": "underConstruction",
+                "order": 2
+            },
+            {
+                "label": "Planned",
+                "value": "planned",
+                "order": 3
+            },
+            {
+                "label": "Out of Use",
+                "value": "outOfUse",
+                "order": 4
+            },
+            {
+                "label": "Planned for Renovation",
+                "value": "plannedForRenovation",
+                "order": 5
+            },
+            {
+                "label": "Proposed",
+                "value": "proposed",
+                "order": 6
+            },
+            {
+                "label": "Project",
+                "value": "project",
+                "order": 7
+            },
+            {
+                "label": "Unimproved",
+                "value": "unimproved",
+                "order": 8
+            },
+            {
+                "label": "Unknown",
+                "value": "unknown",
+                "order": 9
+            },
+            {
+                "label": "Unavailable",
+                "value": "unavailable",
+                "order": 10
+            }
+        ],
+        "grid": {
+            "colSize": 6
+        }
+    },
+    "availableFrom": {
+        "show": true,
+        "label": "Available From",
+        "placeholder": "Select Date...",
+        "format": "MM/dd/yyyy",
+        "restrictInput": true,
+        "grid": {
+            "colSize": 6
+        }
+    },
+    "amenities": {
+        "show": true
+    },
+    "floorsField": {
+        "show": true
+    },
+    "yearField": {
+        "show": true
+    },
+    "city": {
+        "show": true,
+        "size": 8
+    },
+    "country": {
+        "show": false
+    },
+    "stateOrProvince": {
+        "show": false,
+        "label": "State*",
+        "required": false,
+        "countryStates": []
+    },
+    "postalCode": {
+        "show": true,
+        "size": 4
+    },
+    "microMarkets": {
+        "show": true,
+        "label": "Micromarket",
+        "required": false,
+        "options": [
+            {
+                "label": "CBD: Chinatown/Telok Ayer",
+                "value": "CBD: Chinatown/Telok Ayer",
+                "order": 1
+            },
+            {
+                "label": "CBD: City Hall/Beach Road/Bugis/Rochor",
+                "value": "CBD: City Hall/Beach Road/Bugis/Rochor",
+                "order": 2
+            },
+            {
+                "label": "CBD: Havelock/River Valley/Clarke Quay",
+                "value": "CBD: Havelock/River Valley/Clarke Quay",
+                "order": 3
+            },
+            {
+                "label": "CBD: Marina Bay",
+                "value": "CBD: Marina Bay",
+                "order": 4
+            },
+            {
+                "label": "CBD: Orchard/Dhoby Ghaut/Newton",
+                "value": "CBD: Orchard/Dhoby Ghaut/Newton",
+                "order": 5
+            },
+            {
+                "label": "CBD: Raffles Place/Boat Quay",
+                "value": "CBD: Raffles Place/Boat Quay",
+                "order": 6
+            },
+            {
+                "label": "CBD: Suntec/Millenia",
+                "value": "CBD: Suntec/Millenia",
+                "order": 7
+            },
+            {
+                "label": "CBD: Tanjong Pagar/Shenton Way",
+                "value": "CBD: Tanjong Pagar/Shenton Way",
+                "order": 8
+            },
+            {
+                "label": "Central: Alexandra/Bukit Merah/Queenstown",
+                "value": "Central: Alexandra/Bukit Merah/Queenstown",
+                "order": 9
+            },
+            {
+                "label": "Central: Bishan/Toa Payoh",
+                "value": "Central: Bishan/Toa Payoh",
+                "order": 10
+            },
+            {
+                "label": "Central: Bukit Timah/Tanglin",
+                "value": "Central: Bukit Timah/Tanglin",
+                "order": 11
+            },
+            {
+                "label": "Central: Harbourfront/West Coast/Pasir Panjang",
+                "value": "Central: Harbourfront/West Coast/Pasir Panjang",
+                "order": 12
+            },
+            {
+                "label": "Central: Kallang/Geylang",
+                "value": "Central: Kallang/Geylang",
+                "order": 13
+            },
+            {
+                "label": "Central: Katong/East Coast/Marine Parade",
+                "value": "Central: Katong/East Coast/Marine Parade",
+                "order": 14
+            },
+            {
+                "label": "Central: MacPherson/Paya Lebar/Ubi",
+                "value": "Central: MacPherson/Paya Lebar/Ubi",
+                "order": 15
+            },
+            {
+                "label": "Central: Mountbatten/Aljunied",
+                "value": "Central: Mountbatten/Aljunied",
+                "order": 16
+            },
+            {
+                "label": "Central: Novena/Thomson",
+                "value": "Central: Novena/Thomson",
+                "order": 17
+            },
+            {
+                "label": "Central: One-North",
+                "value": "Central: One-North",
+                "order": 18
+            },
+            {
+                "label": "Central: Science Park",
+                "value": "Central: Science Park",
+                "order": 19
+            },
+            {
+                "label": "East: Bedok/Chai Chee/Kaki Bukit",
+                "value": "East: Bedok/Chai Chee/Kaki Bukit",
+                "order": 20
+            },
+            {
+                "label": "East: Changi Business Park",
+                "value": "East: Changi Business Park",
+                "order": 21
+            },
+            {
+                "label": "East: Pasir Ris/Loyang/Changi",
+                "value": "East: Pasir Ris/Loyang/Changi",
+                "order": 22
+            },
+            {
+                "label": "East: Tampines/Simei",
+                "value": "East: Tampines/Simei",
+                "order": 23
+            },
+            {
+                "label": "West: Bukit Batok/Bukit Panjang/Choa Chu Kang",
+                "value": "West: Bukit Batok/Bukit Panjang/Choa Chu Kang",
+                "order": 24
+            },
+            {
+                "label": "West: Clementi/Jurong East",
+                "value": "West: Clementi/Jurong East",
+                "order": 25
+            },
+            {
+                "label": "West: International Business Park",
+                "value": "West: International Business Park",
+                "order": 26
+            },
+            {
+                "label": "West: Jurong West/Boon Lay/Pioneer",
+                "value": "West: Jurong West/Boon Lay/Pioneer",
+                "order": 27
+            },
+            {
+                "label": "West: Tuas",
+                "value": "West: Tuas",
+                "order": 28
+            },
+            {
+                "label": "North: Sungei Kadut/Sembawang/Woodlands/Senoko",
+                "value": "North: Sungei Kadut/Sembawang/Woodlands/Senoko",
+                "order": 29
+            },
+            {
+                "label": "North: Yishun/Mandai",
+                "value": "North: Yishun/Mandai",
+                "order": 30
+            },
+            {
+                "label": "North-East: Sengkang/Punggol/Seletar",
+                "value": "North-East: Sengkang/Punggol/Seletar",
+                "order": 31
+            },
+            {
+                "label": "North-East: Serangoon/Hougang/Ang Mo Kio/Yio Chu Kang",
+                "value": "North-East: Serangoon/Hougang/Ang Mo Kio/Yio Chu Kang",
+                "order": 32
+            },
+            {
+                "label": "North-East: Tai Seng/Kim Chuan",
+                "value": "North-East: Tai Seng/Kim Chuan",
+                "order": 33
+            }
+        ]
+    },
+    "specifications": {
+        "normalFields": {
+            "values": [
+                "retail",
+                "industrial",
+                "office"
+            ],
+            "sale": {
+                "leaseType": {
+                    "show": false
+                },
+                "measure": {
+                    "show": true,
+                    "required": true,
+                    "properties": {
+                        "name": "measure",
+                        "label": "Unit of Measurement",
+                        "prompt": "Select Measurement...",
+                        "options": [
+                            {
+                                "label": "SF  (Square Feet)",
+                                "value": "sf",
+                                "order": 1
+                            },
+                            {
+                                "label": "SM  (Square Meter)",
+                                "value": "sm",
+                                "order": 2
+                            },
+                            {
+                                "label": "Acre",
+                                "value": "acre",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 4
+                    }
+                },
+                "leaseTerm": {
+                    "show": false
+                },
+                "minSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "minSpace",
+                        "label": "Minimum Space",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 4
+                    }
+                },
+                "maxSpace": {
+                    "show": false
+                },
+                "autoCalculateTotalPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "autoCalculateTotalPrice"
+                    }
+                },
+                "totalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "totalSpace",
+                        "label": "Total Space Available",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 4
+                    }
+                },
+                "minPrice": {
+                    "show": false
+                },
+                "maxPrice": {
+                    "show": false
+                },
+                "salePrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "salePrice",
+                        "label": "Sale Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 12
+                    }
+                },
+                "plusSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "plusSalesTax",
+                        "label": "Plus Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "includingSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "includingSalesTax",
+                        "label": "Includes Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "contactBrokerForPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "contactBrokerForPrice",
+                        "label": "Contact Broker For Pricing"
+                    },
+                    "grid": {
+                        "colSize": 12
+                    }
+                }
+            },
+            "lease": {
+                "leaseType": {
+                    "show": true,
+                    "type": "FORM_SELECT",
+                    "order": 3,
+                    "properties": {
+                        "name": "leaseType",
+                        "label": "Lease Type",
+                        "prompt": "Select Type...",
+                        "defaultValue": "LeaseHold",
+                        "options": [
+                            {
+                                "label": "Direct",
+                                "value": "LeaseHold",
+                                "order": 1
+                            },
+                            {
+                                "label": "Sublease",
+                                "value": "SubLease",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "leaseRateType": {
+                    "show": true,
+                    "properties": {
+                        "name": "leaseRateType",
+                        "label": "Lease Rate Type",
+                        "prompt": "Select Lease Rate Type...",
+                        "options": [
+                            {
+                                "label": "Assignment",
+                                "value": "Assignment",
+                                "order": 1
+                            },
+                            {
+                                "label": "Freehold",
+                                "value": "Freehold",
+                                "order": 2
+                            },
+                            {
+                                "label": "Ground Lease",
+                                "value": "GroundLease",
+                                "order": 3
+                            },
+                            {
+                                "label": "Head Lease",
+                                "value": "HeadLease",
+                                "order": 4
+                            },
+                            {
+                                "label": "Lease Hold",
+                                "value": "LeaseHold",
+                                "order": 5
+                            },
+                            {
+                                "label": "License",
+                                "value": "Licence",
+                                "order": 6
+                            },
+                            {
+                                "label": "Long Lease Hold",
+                                "value": "LongLeaseHold",
+                                "order": 7
+                            },
+                            {
+                                "label": "Long Lease",
+                                "value": "LongLet",
+                                "order": 8
+                            },
+                            {
+                                "label": "New",
+                                "value": "New",
+                                "order": 9
+                            },
+                            {
+                                "label": "Occupational Lease",
+                                "value": "OccupationalLease",
+                                "order": 10
+                            },
+                            {
+                                "label": "Sublease",
+                                "value": "SubLease",
+                                "order": 11
+                            },
+                            {
+                                "label": "Unknown",
+                                "value": "Unknown",
+                                "order": 12
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "autoCalculateMinSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "autoCalculateMinSpace"
+                    }
+                },
+                "autoCalculateTotalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "autoCalculateTotalSpace"
+                    }
+                },
+                "autoCalculateMinPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "autoCalculateMinPrice"
+                    }
+                },
+                "autoCalculateMaxPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "autoCalculateMaxPrice"
+                    }
+                },
+                "measure": {
+                    "show": true,
+                    "required": true,
+                    "properties": {
+                        "name": "measure",
+                        "label": "Unit of Measurement",
+                        "prompt": "Select Measurement...",
+                        "options": [
+                            {
+                                "label": "SM  (Square Meter)",
+                                "value": "sm",
+                                "order": 1
+                            },
+                            {
+                                "label": "SF  (Square Feet)",
+                                "value": "sf",
+                                "order": 2
+                            },
+                            {
+                                "label": "Acre",
+                                "value": "acre",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "leaseTerm": {
+                    "show": true,
+                    "properties": {
+                        "name": "leaseTerm",
+                        "label": "Lease Term",
+                        "prompt": "Select Lease Term...",
+                        "options": [
+                            {
+                                "label": "Monthly",
+                                "value": "monthly",
+                                "order": 1
+                            },
+                            {
+                                "label": "Yearly",
+                                "value": "annually",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "minSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "minSpace",
+                        "label": "Minimum Space",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "maxSpace": {
+                    "show": false
+                },
+                "totalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "totalSpace",
+                        "label": "Total Space Available",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "spacePlaceholder": {
+                    "show": false
+                },
+                "minPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "minPrice",
+                        "label": "Minimum Lease Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "maxPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "maxPrice",
+                        "label": "Maximum Lease Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "salePrice": {
+                    "show": false
+                },
+                "plusSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "plusSalesTax",
+                        "label": "Plus Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "includingSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "includingSalesTax",
+                        "label": "Includes Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "contactBrokerForPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "contactBrokerForPrice",
+                        "label": "Contact Broker For Pricing"
+                    },
+                    "grid": {
+                        "colSize": 4
+                    }
+                },
+                "showPriceWithUoM": {
+                    "show": true,
+                    "properties": {
+                        "name": "showPriceWithUoM",
+                        "label": "Show Price With Unit of Measure"
+                    },
+                    "grid": {
+                        "colSize": 4
+                    }
+                }
+            },
+            "salelease": {
+                "leaseType": {
+                    "show": true,
+                    "type": "FORM_SELECT",
+                    "order": 3,
+                    "properties": {
+                        "name": "leaseType",
+                        "label": "Lease Type",
+                        "prompt": "Select Type...",
+                        "defaultValue": "LeaseHold",
+                        "options": [
+                            {
+                                "label": "Direct",
+                                "value": "LeaseHold",
+                                "order": 1
+                            },
+                            {
+                                "label": "Sublease",
+                                "value": "SubLease",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "leaseRateType": {
+                    "show": true,
+                    "properties": {
+                        "name": "leaseRateType",
+                        "label": "Lease Rate Type",
+                        "prompt": "Select Lease Rate Type...",
+                        "options": [
+                            {
+                                "label": "Assignment",
+                                "value": "Assignment",
+                                "order": 1
+                            },
+                            {
+                                "label": "Freehold",
+                                "value": "Freehold",
+                                "order": 2
+                            },
+                            {
+                                "label": "Ground Lease",
+                                "value": "GroundLease",
+                                "order": 3
+                            },
+                            {
+                                "label": "Head Lease",
+                                "value": "HeadLease",
+                                "order": 4
+                            },
+                            {
+                                "label": "Lease Hold",
+                                "value": "LeaseHold",
+                                "order": 5
+                            },
+                            {
+                                "label": "License",
+                                "value": "Licence",
+                                "order": 6
+                            },
+                            {
+                                "label": "Long Lease Hold",
+                                "value": "LongLeaseHold",
+                                "order": 7
+                            },
+                            {
+                                "label": "Long Lease",
+                                "value": "LongLet",
+                                "order": 8
+                            },
+                            {
+                                "label": "New",
+                                "value": "New",
+                                "order": 9
+                            },
+                            {
+                                "label": "Occupational Lease",
+                                "value": "OccupationalLease",
+                                "order": 10
+                            },
+                            {
+                                "label": "Sublease",
+                                "value": "SubLease",
+                                "order": 11
+                            },
+                            {
+                                "label": "Unknown",
+                                "value": "Unknown",
+                                "order": 12
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "autoCalculateMinSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "autoCalculateMinSpace"
+                    }
+                },
+                "autoCalculateTotalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "autoCalculateTotalSpace"
+                    }
+                },
+                "autoCalculateMinPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "autoCalculateMinPrice"
+                    }
+                },
+                "autoCalculateMaxPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "autoCalculateMaxPrice"
+                    }
+                },
+                "autoCalculateTotalPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "autoCalculateTotalPrice"
+                    }
+                },
+                "measure": {
+                    "show": true,
+                    "required": true,
+                    "properties": {
+                        "name": "measure",
+                        "label": "Unit of Measurement",
+                        "prompt": "Select Measurement...",
+                        "options": [
+                            {
+                                "label": "SM  (Square Meter)",
+                                "value": "sm",
+                                "order": 1
+                            },
+                            {
+                                "label": "SF  (Square Feet)",
+                                "value": "sf",
+                                "order": 2
+                            },
+                            {
+                                "label": "Acre",
+                                "value": "acre",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "leaseTerm": {
+                    "show": true,
+                    "properties": {
+                        "name": "leaseTerm",
+                        "label": "Lease Term",
+                        "prompt": "Select Lease Term...",
+                        "options": [
+                            {
+                                "label": "Monthly",
+                                "value": "monthly",
+                                "order": 1
+                            },
+                            {
+                                "label": "Yearly",
+                                "value": "annually",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "minSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "minSpace",
+                        "label": "Minimum Space",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "maxSpace": {
+                    "show": false
+                },
+                "totalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "totalSpace",
+                        "label": "Total Space Available",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "spacePlaceholder": {
+                    "show": false
+                },
+                "minPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "minPrice",
+                        "label": "Minimum Lease Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "maxPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "maxPrice",
+                        "label": "Maximum Lease Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "salePrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "salePrice",
+                        "label": "Sale Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "plusSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "plusSalesTax",
+                        "label": "Plus Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "includingSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "includingSalesTax",
+                        "label": "Includes Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "contactBrokerForPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "contactBrokerForPrice",
+                        "label": "Contact Broker For Pricing"
+                    },
+                    "grid": {
+                        "colSize": 4
+                    }
+                },
+                "showPriceWithUoM": {
+                    "show": true,
+                    "properties": {
+                        "name": "showPriceWithUoM",
+                        "label": "Show Price With Unit of Measure"
+                    },
+                    "grid": {
+                        "colSize": 3
+                    }
+                }
+            }
+        },
+        "flexFields": {
+            "values": [
+                "flex"
+            ],
+            "sale": {
+                "leaseType": {
+                    "show": false
+                },
+                "measure": {
+                    "show": true,
+                    "required": true,
+                    "properties": {
+                        "name": "measure",
+                        "label": "Measure",
+                        "prompt": "Select Measurement...",
+                        "options": [
+                            {
+                                "label": "Per Person",
+                                "value": "person",
+                                "order": 1
+                            },
+                            {
+                                "label": "Per Desk",
+                                "value": "desk",
+                                "order": 2
+                            },
+                            {
+                                "label": "Per Room",
+                                "value": "room",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 12
+                    }
+                },
+                "leaseTerm": {
+                    "show": false
+                },
+                "minSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "minSpace",
+                        "label": "Minimum Space",
+                        "numericOnly": true,
+                        "acceptDecimals": false,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "maxSpace": {
+                    "show": false
+                },
+                "totalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "totalSpace",
+                        "label": "Total Space Available",
+                        "numericOnly": true,
+                        "acceptDecimals": false,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "spacePlaceholder": {
+                    "show": false
+                },
+                "minPrice": {
+                    "show": false
+                },
+                "maxPrice": {
+                    "show": false
+                },
+                "salePrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "salePrice",
+                        "label": "Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 12
+                    }
+                },
+                "plusSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "plusSalesTax",
+                        "label": "Plus Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "includingSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "includingSalesTax",
+                        "label": "Includes Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "contactBrokerForPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "contactBrokerForPrice",
+                        "label": "Contact Broker For Pricing"
+                    },
+                    "grid": {
+                        "colSize": 12
+                    }
+                }
+            },
+            "lease": {
+                "leaseType": {
+                    "show": false
+                },
+                "measure": {
+                    "show": true,
+                    "required": true,
+                    "properties": {
+                        "name": "measure",
+                        "label": "Measure",
+                        "prompt": "Select Measurement...",
+                        "options": [
+                            {
+                                "label": "Per Person",
+                                "value": "person",
+                                "order": 1
+                            },
+                            {
+                                "label": "Per Desk",
+                                "value": "desk",
+                                "order": 2
+                            },
+                            {
+                                "label": "Per Room",
+                                "value": "room",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "leaseTerm": {
+                    "show": true,
+                    "properties": {
+                        "name": "leaseTerm",
+                        "label": "Lease Term",
+                        "prompt": "Select Lease Term...",
+                        "options": [
+                            {
+                                "label": "Monthly",
+                                "value": "monthly",
+                                "order": 1
+                            },
+                            {
+                                "label": "Yearly",
+                                "value": "annually",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "minSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "minSpace",
+                        "label": "Minimum Space",
+                        "numericOnly": true,
+                        "acceptDecimals": false,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "maxSpace": {
+                    "show": false
+                },
+                "totalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "totalSpace",
+                        "label": "Total Space Available",
+                        "numericOnly": true,
+                        "acceptDecimals": false,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "spacePlaceholder": {
+                    "show": false
+                },
+                "minPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "minPrice",
+                        "label": "Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 12
+                    }
+                },
+                "maxPrice": {
+                    "show": false
+                },
+                "salePrice": {
+                    "show": false
+                },
+                "plusSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "plusSalesTax",
+                        "label": "Plus Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "includingSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "includingSalesTax",
+                        "label": "Includes Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "contactBrokerForPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "contactBrokerForPrice",
+                        "label": "Contact Broker For Pricing"
+                    },
+                    "grid": {
+                        "colSize": 4
+                    }
+                },
+                "showPriceWithUoM": {
+                    "show": true,
+                    "properties": {
+                        "name": "showPriceWithUoM",
+                        "label": "Show Price With Unit of Measure"
+                    },
+                    "grid": {
+                        "colSize": 4
+                    }
+                }
+            },
+            "salelease": {
+                "leaseType": {
+                    "show": false
+                },
+                "measure": {
+                    "show": true,
+                    "required": true,
+                    "properties": {
+                        "name": "measure",
+                        "label": "Measure",
+                        "prompt": "Select Measurement...",
+                        "options": [
+                            {
+                                "label": "Per Person",
+                                "value": "person",
+                                "order": 1
+                            },
+                            {
+                                "label": "Per Desk",
+                                "value": "desk",
+                                "order": 2
+                            },
+                            {
+                                "label": "Per Room",
+                                "value": "room",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "leaseTerm": {
+                    "show": true,
+                    "properties": {
+                        "name": "leaseTerm",
+                        "label": "Lease Term",
+                        "prompt": "Select Lease Term...",
+                        "options": [
+                            {
+                                "label": "Monthly",
+                                "value": "monthly",
+                                "order": 1
+                            },
+                            {
+                                "label": "Yearly",
+                                "value": "annually",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "minSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "minSpace",
+                        "label": "Minimum Space",
+                        "numericOnly": true,
+                        "acceptDecimals": false,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "maxSpace": {
+                    "show": false
+                },
+                "totalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "totalSpace",
+                        "label": "Total Space Available",
+                        "numericOnly": true,
+                        "acceptDecimals": false,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "spacePlaceholder": {
+                    "show": false
+                },
+                "minPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "minPrice",
+                        "label": "Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 12
+                    }
+                },
+                "maxPrice": {
+                    "show": false
+                },
+                "salePrice": {
+                    "show": false
+                },
+                "plusSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "plusSalesTax",
+                        "label": "Plus Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "includingSalesTax": {
+                    "show": true,
+                    "properties": {
+                        "name": "includingSalesTax",
+                        "label": "Includes Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "contactBrokerForPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "contactBrokerForPrice",
+                        "label": "Contact Broker For Pricing"
+                    },
+                    "grid": {
+                        "colSize": 4
+                    }
+                },
+                "showPriceWithUoM": {
+                    "show": true,
+                    "properties": {
+                        "name": "showPriceWithUoM",
+                        "label": "Show Price With Unit of Measure"
+                    },
+                    "grid": {
+                        "colSize": 4
+                    }
+                }
+            }
+        },
+        "shophouseFields": {
+            "values": [
+                "shophouse",
+                "residential"
+            ],
+            "sale": {
+                "leaseType": {
+                    "show": false
+                },
+                "measure": {
+                    "show": true,
+                    "required": true,
+                    "properties": {
+                        "name": "measure",
+                        "label": "Area Measure",
+                        "prompt": "Select Measurement...",
+                        "options": [
+                            {
+                                "label": "SF  (Square Feet)",
+                                "value": "sf",
+                                "order": 1
+                            },
+                            {
+                                "label": "SM  (Square Meter)",
+                                "value": "sm",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "leaseTerm": {
+                    "show": false
+                },
+                "minSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "minSpace",
+                        "label": "Minimum Space",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "maxSpace": {
+                    "show": false
+                },
+                "totalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "totalSpace",
+                        "label": "Total Space Available",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "spacePlaceholder": {
+                    "show": false
+                },
+                "bedrooms": {
+                    "show": true,
+                    "properties": {
+                        "name": "bedrooms",
+                        "label": "Number of bedrooms",
+                        "numericOnly": true,
+                        "acceptDecimals": false,
+                        "serverDataType": "INTEGER",
+                        "defaultValue": 0
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "minPrice": {
+                    "show": false
+                },
+                "maxPrice": {
+                    "show": false
+                },
+                "salePrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "salePrice",
+                        "label": "Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "plusSalesTax": {
+                    "show": false,
+                    "properties": {
+                        "name": "plusSalesTax",
+                        "label": "Plus Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "includingSalesTax": {
+                    "show": false,
+                    "properties": {
+                        "name": "includingSalesTax",
+                        "label": "Includes Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "contactBrokerForPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "contactBrokerForPrice",
+                        "label": "Contact Broker For Pricing"
+                    },
+                    "grid": {
+                        "colSize": 12
+                    }
+                }
+            },
+            "lease": {
+                "leaseType": {
+                    "show": false
+                },
+                "measure": {
+                    "show": true,
+                    "required": true,
+                    "properties": {
+                        "name": "measure",
+                        "label": "Area Measure",
+                        "prompt": "Select Measurement...",
+                        "options": [
+                            {
+                                "label": "SF  (Square Feet)",
+                                "value": "sf",
+                                "order": 1
+                            },
+                            {
+                                "label": "SM  (Square Meter)",
+                                "value": "sm",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "leaseTerm": {
+                    "show": false
+                },
+                "minSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "minSpace",
+                        "label": "Minimum Space",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "maxSpace": {
+                    "show": false
+                },
+                "totalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "totalSpace",
+                        "label": "Total Space Available",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "spacePlaceholder": {
+                    "show": false
+                },
+                "bedrooms": {
+                    "show": true,
+                    "properties": {
+                        "name": "bedrooms",
+                        "label": "Number of bedrooms",
+                        "numericOnly": true,
+                        "acceptDecimals": false,
+                        "serverDataType": "INTEGER",
+                        "defaultValue": 0
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "minPrice": {
+                    "show": false,
+                    "properties": {
+                        "name": "minPrice",
+                        "label": "Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 12
+                    }
+                },
+                "maxPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "maxPrice",
+                        "label": "Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "salePrice": {
+                    "show": false
+                },
+                "plusSalesTax": {
+                    "show": false,
+                    "properties": {
+                        "name": "plusSalesTax",
+                        "label": "Plus Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "includingSalesTax": {
+                    "show": false,
+                    "properties": {
+                        "name": "includingSalesTax",
+                        "label": "Includes Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "contactBrokerForPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "contactBrokerForPrice",
+                        "label": "Contact Broker For Pricing"
+                    },
+                    "grid": {
+                        "colSize": 7
+                    }
+                },
+                "showPriceWithUoM": {
+                    "show": true,
+                    "properties": {
+                        "name": "showPriceWithUoM",
+                        "label": "Show Price With Unit of Measure"
+                    },
+                    "grid": {
+                        "colSize": 3
+                    }
+                }
+            },
+            "salelease": {
+                "leaseType": {
+                    "show": false
+                },
+                "measure": {
+                    "show": true,
+                    "required": true,
+                    "properties": {
+                        "name": "measure",
+                        "label": "Area Measure",
+                        "prompt": "Select Measurement...",
+                        "options": [
+                            {
+                                "label": "SF  (Square Feet)",
+                                "value": "sf",
+                                "order": 1
+                            },
+                            {
+                                "label": "SM  (Square Meter)",
+                                "value": "sm",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "leaseTerm": {
+                    "show": false
+                },
+                "minSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "minSpace",
+                        "label": "Minimum Space",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "maxSpace": {
+                    "show": false
+                },
+                "totalSpace": {
+                    "show": true,
+                    "properties": {
+                        "name": "totalSpace",
+                        "label": "Total Space Available",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "INTEGER"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "spacePlaceholder": {
+                    "show": false
+                },
+                "bedrooms": {
+                    "show": true,
+                    "properties": {
+                        "name": "bedrooms",
+                        "label": "Number of bedrooms",
+                        "numericOnly": true,
+                        "acceptDecimals": false,
+                        "serverDataType": "INTEGER",
+                        "defaultValue": 0
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "minPrice": {
+                    "show": false,
+                    "properties": {
+                        "name": "minPrice",
+                        "label": "Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 12
+                    }
+                },
+                "maxPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "maxPrice",
+                        "label": "Price",
+                        "numericOnly": true,
+                        "acceptDecimals": true,
+                        "serverDataType": "DECIMAL_CURRENCY"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "salePrice": {
+                    "show": false
+                },
+                "plusSalesTax": {
+                    "show": false,
+                    "properties": {
+                        "name": "plusSalesTax",
+                        "label": "Plus Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "includingSalesTax": {
+                    "show": false,
+                    "properties": {
+                        "name": "includingSalesTax",
+                        "label": "Includes Sales Tax"
+                    },
+                    "grid": {
+                        "colSize": 6
+                    }
+                },
+                "contactBrokerForPrice": {
+                    "show": true,
+                    "properties": {
+                        "name": "contactBrokerForPrice",
+                        "label": "Contact Broker For Pricing"
+                    },
+                    "grid": {
+                        "colSize": 7
+                    }
+                },
+                "showPriceWithUoM": {
+                    "show": true,
+                    "properties": {
+                        "name": "showPriceWithUoM",
+                        "label": "Show Price With Unit of Measure"
+                    },
+                    "grid": {
+                        "colSize": 3
+                    }
+                }
+            }
+        }
+    },
+    "sizesandmeasurements": {
+        "show": true,
+        "header": "SIZES AND MEASUREMENTS",
+        "label": "sizetype",
+        "required": false,
+        "sizeType": [
+            {
+                "label": "Land Size",
+                "value": "LandSize",
+                "order": 1,
+                "unit": [
+                    "sqft",
+                    "sqm",
+                    "hectare",
+                    "acre",
+                    "ft",
+                    "yd",
+                    "m",
+                    "pp"
+                ],
+                "size": true
+            },
+            {
+                "label": "Storage Area",
+                "value": "StorageArea",
+                "order": 2,
+                "unit": [
+                    "sqft",
+                    "sqm",
+                    "hectare",
+                    "acre",
+                    "ft",
+                    "yd",
+                    "m",
+                    "pp"
+                ],
+                "size": true
+            },
+            {
+                "label": "Total Building Size",
+                "value": "TotalBuildingSize",
+                "order": 3,
+                "unit": [
+                    "sqft",
+                    "sqm",
+                    "hectare",
+                    "acre",
+                    "ft",
+                    "yd",
+                    "m",
+                    "pp"
+                ],
+                "size": true
+            },
+            {
+                "label": "Office Size",
+                "value": "OfficeSize",
+                "order": 4,
+                "unit": [
+                    "sqft",
+                    "sqm",
+                    "hectare",
+                    "acre",
+                    "ft",
+                    "yd",
+                    "m",
+                    "pp"
+                ],
+                "size": true
+            },
+            {
+                "label": "Retail Size",
+                "value": "RetailSize",
+                "order": 5,
+                "unit": [
+                    "sqft",
+                    "sqm",
+                    "hectare",
+                    "acre",
+                    "ft",
+                    "yd",
+                    "m",
+                    "pp"
+                ],
+                "size": true
+            },
+            {
+                "label": "Mezzanine Size",
+                "value": "MezzanineSize",
+                "order": 6,
+                "unit": [
+                    "sqft",
+                    "sqm",
+                    "hectare",
+                    "acre",
+                    "ft",
+                    "yd",
+                    "m",
+                    "pp"
+                ],
+                "size": true
+            },
+            {
+                "label": "Warehouse Size",
+                "value": "WarehouseSize",
+                "order": 7,
+                "unit": [
+                    "sqft",
+                    "sqm",
+                    "hectare",
+                    "acre",
+                    "ft",
+                    "yd",
+                    "m",
+                    "pp"
+                ],
+                "size": true
+            },
+            {
+                "label": "Total Contiguous Space",
+                "value": "TotalContiguousSpace",
+                "order": 8,
+                "unit": [
+                    "sqft",
+                    "sqm",
+                    "hectare",
+                    "acre",
+                    "ft",
+                    "yd",
+                    "m",
+                    "pp"
+                ],
+                "size": true
+            }
+        ],
+        "unitofmeasure": [
+            {
+                "label": "SF",
+                "value": "sqft",
+                "order": 1
+            },
+            {
+                "label": "SM",
+                "value": "sqm",
+                "order": 2
+            },
+            {
+                "label": "Hectare",
+                "value": "hectare",
+                "order": 3
+            },
+            {
+                "label": "Acre",
+                "value": "acre",
+                "order": 4
+            },
+            {
+                "label": "ft",
+                "value": "ft",
+                "order": 5
+            },
+            {
+                "label": "yd",
+                "value": "yd",
+                "order": 6
+            },
+            {
+                "label": "m",
+                "value": "m",
+                "order": 7
+            }
+        ]
+    },
+    "chargesAndModifiers": {
+        "show": true,
+        "label": "Charges",
+        "required": false,
+        "enablePerUnit": true,
+        "chargesType": [
+            {
+                "label": "Business rates",
+                "value": "BusinessRates",
+                "order": 3,
+                "modifiers": [
+                    "Asking",
+                    "Statuatory",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            },
+            {
+                "label": "Service charge",
+                "value": "ServiceCharge",
+                "order": 4,
+                "modifiers": [
+                    "Statuatory",
+                    "Asking",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            },
+            {
+                "label": "Estate charge",
+                "value": "EstateCharge",
+                "order": 5,
+                "modifiers": [
+                    "Statuatory",
+                    "Asking",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            },
+            {
+                "label": "Operating cost",
+                "value": "OperatingCost",
+                "order": 6,
+                "modifiers": [
+                    "Statuatory",
+                    "Asking",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            },
+            {
+                "label": "External parking space cost",
+                "value": "ExternalParkingSpaceCost",
+                "order": 7,
+                "modifiers": [
+                    "Statuatory",
+                    "Asking",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            },
+            {
+                "label": "Internal parking space cost",
+                "value": "InternaParkingSpaceCost",
+                "order": 8,
+                "modifiers": [
+                    "Statuatory",
+                    "Asking",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            },
+            {
+                "label": "Brokerage fees",
+                "value": "BrokerageFees",
+                "order": 9,
+                "modifiers": [
+                    "Statuatory",
+                    "Asking",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            },
+            {
+                "label": "Deposit",
+                "value": "Deposit",
+                "order": 10,
+                "modifiers": [
+                    "Statuatory",
+                    "Asking",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            },
+            {
+                "label": "Additional rent",
+                "value": "AdditionalRent",
+                "order": 11,
+                "modifiers": [
+                    "Statuatory",
+                    "Asking",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            },
+            {
+                "label": "Net rent",
+                "value": "NetRent",
+                "order": 12,
+                "modifiers": [
+                    "Statuatory",
+                    "Asking",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            },
+            {
+                "label": "Flex rent",
+                "value": "FlexRent",
+                "order": 13,
+                "modifiers": [
+                    "Statuatory",
+                    "Asking",
+                    "OnApplication",
+                    "Guide",
+                    "From",
+                    "To",
+                    "OffersInExcessOf",
+                    "Fixed",
+                    "ReducedTo",
+                    "CallForInfo",
+                    "Estimated",
+                    "PriceIsNegotiable",
+                    "PriceOnListing",
+                    "Auction",
+                    "DeadlineSale",
+                    "ExpressionsOfInterest",
+                    "Outgoings",
+                    "PrivateTreaty",
+                    "Tender",
+                    "ContactAgent"
+                ],
+                "terms": [
+                    "Once",
+                    "Weekly",
+                    "Monthly",
+                    "Annually"
+                ],
+                "amount": true
+            }
+        ],
+        "chargeModifier": [
+            {
+                "label": "Statuatory",
+                "value": "Statuatory",
+                "order": 1
+            },
+            {
+                "label": "Asking",
+                "value": "Asking",
+                "order": 2
+            },
+            {
+                "label": "On application",
+                "value": "OnApplication",
+                "order": 3
+            },
+            {
+                "label": "Guide",
+                "value": "Guide",
+                "order": 4
+            },
+            {
+                "label": "From",
+                "value": "From",
+                "order": 5
+            },
+            {
+                "label": "To",
+                "value": "To",
+                "order": 6
+            },
+            {
+                "label": "Offers in excess of",
+                "value": "OffersInExcessOf",
+                "order": 7
+            },
+            {
+                "label": "Fixed",
+                "value": "Fixed",
+                "order": 8
+            },
+            {
+                "label": "Reduced to",
+                "value": "ReducedTo",
+                "order": 9
+            },
+            {
+                "label": "Call for info",
+                "value": "CallForInfo",
+                "order": 10
+            },
+            {
+                "label": "Estimated",
+                "value": "Estimated",
+                "order": 11
+            },
+            {
+                "label": "Price is negotiable",
+                "value": "PriceIsNegotiable",
+                "order": 12
+            },
+            {
+                "label": "Price on listing",
+                "value": "PriceOnListing",
+                "order": 13
+            },
+            {
+                "label": "Auction",
+                "value": "Auction",
+                "order": 14
+            },
+            {
+                "label": "Deadline sale",
+                "value": "DeadlineSale",
+                "order": 15
+            },
+            {
+                "label": "Expression of interest",
+                "value": "ExpressionsOfInterest",
+                "order": 16
+            },
+            {
+                "label": "Outgoings",
+                "value": "Outgoings",
+                "order": 17
+            },
+            {
+                "label": "Private treaty",
+                "value": "PrivateTreaty",
+                "order": 18
+            },
+            {
+                "label": "Tender",
+                "value": "Tender",
+                "order": 19
+            },
+            {
+                "label": "Contact agent",
+                "value": "ContactAgent",
+                "order": 20
+            }
+        ],
+        "term": [
+            {"label": "Once", "value": "Once", "order": 1},
+            {"label": "Weekly", "value": "Weekly", "order": 2},
+            {"label": "Monthly", "value": "Monthly", "order": 3},
+            {"label": "Annually", "value": "Annually", "order": 4}
+        ],
+        "perUnit": [
+            {"label": "Square Meters", "value": "sqm", "order": 1},
+            {"label": "Square Feet", "value": "sqft", "order": 2},
+            {"label": "Acre", "value": "acre", "order": 3}
+        ]
+    },
+    "contacts": {
+        "phoneMask": "([+65 ]9999 9999[ 9{+}])|(+9{1,4} 9{+})",
+        "homeOffice": {
+            "show": true,
+            "label": "Home Office",
+            "required": false,
+            "options": [],
+            "fieldType": "FORM_INPUT"
+        }
+    },
+    "spaces": {
+        "accordionSetups": [
+            {
+                "propertyTypes": [
+                    "retail",
+                    "industrial",
+                    "office",
+                    "shophouse",
+                    "residential"
+                ],
+                "header": "Available Spaces",
+                "useLabelForPaneHeader": false
+            },
+            {
+                "propertyTypes": [
+                    "flex"
+                ],
+                "header": "Flexible Spaces",
+                "useLabelForPaneHeader": true
+            }
+        ],
+        "fields": [
+            {
+                "propertyTypes": [
+                    "retail",
+                    "industrial",
+                    "office",
+                    "shophouse",
+                    "residential"
+                ],
+                "sale": {
+                    "name": {
+                        "show": true,
+                        "type": "FORM_SPACE_NAME",
+                        "order": 1,
+                        "properties": {
+                            "name": "nameSingle",
+                            "dbName": "name",
+                            "placeholder": "e.g. 3rd Floor Suite 308"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "spaceDescription": {
+                        "show": true,
+                        "type": "FORM_SPACE_DESC",
+                        "order": 2,
+                        "properties": {
+                            "name": "spaceDescriptionSingle",
+                            "dbName": "spaceDescription",
+                            "label": "Description"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "minSpace": {
+                        "show": false
+                    },
+                    "maxSpace": {
+                        "show": false
+                    },
+                    "totalSpace": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 5,
+                        "properties": {
+                            "name": "specifications.totalSpace",
+                            "label": "Size",
+                            "numericOnly": true,
+                            "acceptDecimals": true,
+                            "serverDataType": "INTEGER"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "spaceUnitOfMeasure": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 4,
+                        "properties": {
+                            "name": "specifications.measure",
+                            "label": "Unit of Measurement",
+                            "prompt": "Select Measurement...",
+                            "options": [
+                                {
+                                    "label": "Square Feet",
+                                    "value": "sf",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Square Meters",
+                                    "value": "sm",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Acres",
+                                    "value": "acre",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "salePrice": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 5,
+                        "properties": {
+                            "name": "specifications.salePrice",
+                            "label": "Sale Price",
+                            "numericOnly": true,
+                            "acceptDecimals": true,
+                            "serverDataType": "DECIMAL_CURRENCY"
+                        },
+                        "viewProperties": {
+                            "prefix": "currencyIcon",
+                            "disabled": "disablePrice",
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "contactBrokerForPrice": {
+                        "show": true,
+                        "type": "FORM_CHECKBOX",
+                        "order": 6,
+                        "properties": {
+                            "name": "specifications.contactBrokerForPrice",
+                            "label": "Contact Broker for Pricing"
+                        },
+                        "grid": {
+                            "colSize": 5
+                        },
+                        "className": "checkbox-wrapper"
+                    },
+                    "status": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 7,
+                        "properties": {
+                            "name": "status",
+                            "label": "Status",
+                            "prompt": "Select Status...",
+                            "options": [
+                                {
+                                    "label": "Available",
+                                    "value": "available",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Unavailable",
+                                    "value": "unavailable",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "availableFrom": {
+                        "show": true,
+                        "type": "FORM_DATE_FIELD",
+                        "order": 8,
+                        "properties": {
+                            "name": "availableFrom",
+                            "label": "Available From",
+                            "placeholder": "Select Date...",
+                            "format": "MM/dd/yyyy",
+                            "restrictInput": true
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "leaseTerm": {
+                        "show": false
+                    },
+                    "leaseType": {
+                        "show": false
+                    },
+                    "spaceType": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 9,
+                        "properties": {
+                            "name": "spaceType",
+                            "label": "Space Type",
+                            "prompt": "Select Space Type...",
+                            "options": [
+                                {
+                                    "label": "Office",
+                                    "value": "office",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Industrial",
+                                    "value": "industrial",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Retail",
+                                    "value": "retail",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "minPrice": {
+                        "show": false
+                    },
+                    "maxPrice": {
+                        "show": false
+                    },
+                    "measure": {
+                        "show": false
+                    },
+                    "spaceSizes": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 10,
+                        "properties": {
+                            "name": "spaceSizes",
+                            "setup": {
+                                "show": true,
+                                "use": "sizesandmeasurements"
+                            }
+                        }
+                    },
+                    "includeFiles": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 11,
+                        "properties": {
+                            "name": "includeFiles"
+                        }
+                    },
+                    "video": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 12,
+                        "properties": {
+                            "name": "video",
+                            "label": "Video URL",
+                            "placeholder": "e.g. https://cbre.qumucloud.com/view/your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "walkThrough": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 13,
+                        "properties": {
+                            "name": "walkThrough",
+                            "label": "3D/Virtual Tour URL",
+                            "placeholder": "e.g. https://my.matterport.com/show/?m=your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    }
+                },
+                "lease": {
+                    "name": {
+                        "show": true,
+                        "type": "FORM_SPACE_NAME",
+                        "order": 1,
+                        "properties": {
+                            "name": "nameSingle",
+                            "dbName": "name",
+                            "label": "Name",
+                            "placeholder": "e.g. 3rd Floor Suite 308"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "spaceDescription": {
+                        "show": true,
+                        "type": "FORM_SPACE_DESC",
+                        "order": 2,
+                        "properties": {
+                            "name": "spaceDescriptionSingle",
+                            "dbName": "spaceDescription",
+                            "label": "Description"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "leaseType": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 3,
+                        "properties": {
+                            "name": "specifications.leaseType",
+                            "label": "Lease Type",
+                            "prompt": "Select Lease Type...",
+                            "defaultValue": "LeaseHold",
+                            "options": [
+                                {
+                                    "label": "Direct",
+                                    "value": "LeaseHold",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Sublease",
+                                    "value": "SubLease",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "leaseTerm": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 4,
+                        "properties": {
+                            "name": "specifications.leaseTerm",
+                            "label": "Lease Term",
+                            "prompt": "Select Lease Term...",
+                            "options": [
+                                {
+                                    "label": "Monthly",
+                                    "value": "monthly",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Yearly",
+                                    "value": "annually",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "minSpace": {
+                        "show": false
+                    },
+                    "maxSpace": {
+                        "show": false
+                    },
+                    "totalSpace": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 5,
+                        "properties": {
+                            "name": "specifications.totalSpace",
+                            "label": "Size",
+                            "numericOnly": true,
+                            "acceptDecimals": true,
+                            "serverDataType": "INTEGER"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "spaceUnitOfMeasure": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 6,
+                        "properties": {
+                            "name": "specifications.measure",
+                            "label": "Unit of Measurement",
+                            "prompt": "Select Measurement...",
+                            "options": [
+                                {
+                                    "label": "Square Feet",
+                                    "value": "sf",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Square Meters",
+                                    "value": "sm",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Acres",
+                                    "value": "acre",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "maxPrice": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 7,
+                        "properties": {
+                            "name": "specifications.maxPrice",
+                            "label": "Lease Price",
+                            "numericOnly": true,
+                            "acceptDecimals": true,
+                            "serverDataType": "DECIMAL_CURRENCY"
+                        },
+                        "viewProperties": {
+                            "prefix": "currencyIcon",
+                            "disabled": "disablePrice",
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "contactBrokerForPrice": {
+                        "show": true,
+                        "type": "FORM_CHECKBOX",
+                        "order": 8,
+                        "properties": {
+                            "name": "specifications.contactBrokerForPrice",
+                            "label": "Contact Broker for Pricing"
+                        },
+                        "grid": {
+                            "colSize": 5
+                        },
+                        "className": "checkbox-wrapper"
+                    },
+                    "status": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 9,
+                        "properties": {
+                            "name": "status",
+                            "label": "Status",
+                            "prompt": "Select Status...",
+                            "options": [
+                                {
+                                    "label": "Available",
+                                    "value": "available",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Unavailable",
+                                    "value": "unavailable",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "availableFrom": {
+                        "show": true,
+                        "type": "FORM_DATE_FIELD",
+                        "order": 10,
+                        "properties": {
+                            "name": "availableFrom",
+                            "label": "Available From",
+                            "placeholder": "Select Date...",
+                            "format": "MM/dd/yyyy",
+                            "restrictInput": true
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "spaceType": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 11,
+                        "properties": {
+                            "name": "spaceType",
+                            "label": "Space Type",
+                            "prompt": "Select Space Type...",
+                            "options": [
+                                {
+                                    "label": "Office",
+                                    "value": "office",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Industrial",
+                                    "value": "industrial",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Retail",
+                                    "value": "retail",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "minPrice": {
+                        "show": false
+                    },
+                    "salePrice": {
+                        "show": false
+                    },
+                    "measure": {
+                        "show": false
+                    },
+                    "spaceSizes": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 12,
+                        "properties": {
+                            "name": "spaceSizes",
+                            "setup": {
+                                "show": true,
+                                "use": "sizesandmeasurements"
+                            }
+                        }
+                    },
+                    "includeFiles": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 13,
+                        "properties": {
+                            "name": "includeFiles"
+                        }
+                    },
+                    "video": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 14,
+                        "properties": {
+                            "name": "video",
+                            "label": "Video URL",
+                            "placeholder": "e.g. https://cbre.qumucloud.com/view/your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "walkThrough": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 15,
+                        "properties": {
+                            "name": "walkThrough",
+                            "label": "3D/Virtual Tour URL",
+                            "placeholder": "e.g. https://my.matterport.com/show/?m=your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    }
+                },
+                "salelease": {
+                    "name": {
+                        "show": true,
+                        "type": "FORM_SPACE_NAME",
+                        "order": 1,
+                        "properties": {
+                            "name": "nameSingle",
+                            "dbName": "name",
+                            "label": "Name",
+                            "placeholder": "e.g. 3rd Floor Suite 308"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "spaceDescription": {
+                        "show": true,
+                        "type": "FORM_SPACE_DESC",
+                        "order": 2,
+                        "properties": {
+                            "name": "spaceDescriptionSingle",
+                            "dbName": "spaceDescription",
+                            "label": "Description"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "leaseType": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 3,
+                        "properties": {
+                            "name": "specifications.leaseType",
+                            "label": "Lease Type",
+                            "prompt": "Select Lease Type...",
+                            "defaultValue": "LeaseHold",
+                            "options": [
+                                {
+                                    "label": "Direct",
+                                    "value": "LeaseHold",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Sublease",
+                                    "value": "SubLease",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "leaseTerm": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 4,
+                        "properties": {
+                            "name": "specifications.leaseTerm",
+                            "label": "Lease Term",
+                            "prompt": "Select Lease Term...",
+                            "options": [
+                                {
+                                    "label": "Monthly",
+                                    "value": "monthly",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Yearly",
+                                    "value": "annually",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "minSpace": {
+                        "show": false
+                    },
+                    "maxSpace": {
+                        "show": false
+                    },
+                    "totalSpace": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 5,
+                        "properties": {
+                            "name": "specifications.totalSpace",
+                            "label": "Size",
+                            "numericOnly": true,
+                            "acceptDecimals": true,
+                            "serverDataType": "INTEGER"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "spaceUnitOfMeasure": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 6,
+                        "properties": {
+                            "name": "specifications.measure",
+                            "label": "Unit of Measurement",
+                            "prompt": "Select Measurement...",
+                            "options": [
+                                {
+                                    "label": "Square Feet",
+                                    "value": "sf",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Square Meters",
+                                    "value": "sm",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Acres",
+                                    "value": "acre",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "maxPrice": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 7,
+                        "properties": {
+                            "name": "specifications.maxPrice",
+                            "label": "Lease Price",
+                            "numericOnly": true,
+                            "acceptDecimals": true,
+                            "serverDataType": "DECIMAL_CURRENCY"
+                        },
+                        "viewProperties": {
+                            "prefix": "currencyIcon",
+                            "disabled": "disablePrice",
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "salePrice": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 8,
+                        "properties": {
+                            "name": "specifications.salePrice",
+                            "label": "Sale Price",
+                            "numericOnly": true,
+                            "acceptDecimals": true,
+                            "serverDataType": "DECIMAL_CURRENCY"
+                        },
+                        "viewProperties": {
+                            "prefix": "currencyIcon",
+                            "disabled": "disablePrice",
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "contactBrokerForPrice": {
+                        "show": true,
+                        "type": "FORM_CHECKBOX",
+                        "order": 9,
+                        "properties": {
+                            "name": "specifications.contactBrokerForPrice",
+                            "label": "Contact Broker for Pricing"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        },
+                        "className": "checkbox-wrapper"
+                    },
+                    "status": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 10,
+                        "properties": {
+                            "name": "status",
+                            "label": "Status",
+                            "prompt": "Select Status...",
+                            "options": [
+                                {
+                                    "label": "Available",
+                                    "value": "available",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Unavailable",
+                                    "value": "unavailable",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "availableFrom": {
+                        "show": true,
+                        "type": "FORM_DATE_FIELD",
+                        "order": 11,
+                        "properties": {
+                            "name": "availableFrom",
+                            "label": "Available From",
+                            "placeholder": "Select Date...",
+                            "format": "MM/dd/yyyy",
+                            "restrictInput": true
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "spaceType": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 12,
+                        "properties": {
+                            "name": "spaceType",
+                            "label": "Space Type",
+                            "prompt": "Select Space Type...",
+                            "options": [
+                                {
+                                    "label": "Office",
+                                    "value": "office",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Industrial",
+                                    "value": "industrial",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Retail",
+                                    "value": "retail",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "minPrice": {
+                        "show": false
+                    },
+                    "measure": {
+                        "show": false
+                    },
+                    "spaceSizes": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 13,
+                        "properties": {
+                            "name": "spaceSizes",
+                            "setup": {
+                                "show": true,
+                                "use": "sizesandmeasurements"
+                            }
+                        }
+                    },
+                    "includeFiles": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 14,
+                        "properties": {
+                            "name": "includeFiles"
+                        }
+                    },
+                    "video": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 15,
+                        "properties": {
+                            "name": "video",
+                            "label": "Video URL",
+                            "placeholder": "e.g. https://cbre.qumucloud.com/view/your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "walkThrough": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 16,
+                        "properties": {
+                            "name": "walkThrough",
+                            "label": "3D/Virtual Tour URL",
+                            "placeholder": "e.g. https://my.matterport.com/show/?m=your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    }
+                }
+            },
+            {
+                "propertyTypes": [
+                    "flex"
+                ],
+                "sale": {
+                    "name": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 1,
+                        "properties": {
+                            "name": "nameSingle",
+                            "dbName": "name",
+                            "label": "Name",
+                            "prompt": "Select Name...",
+                            "options": [
+                                {
+                                    "label": "Hot Desks",
+                                    "value": "hot",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Fixed Desks",
+                                    "value": "fixed",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Serviced Offices",
+                                    "value": "serviced",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "spaceDescription": {
+                        "show": true,
+                        "type": "FORM_SPACE_DESC",
+                        "order": 2,
+                        "properties": {
+                            "name": "spaceDescriptionSingle",
+                            "dbName": "spaceDescription",
+                            "label": "Description"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "status": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 3,
+                        "properties": {
+                            "name": "status",
+                            "label": "Status",
+                            "prompt": "Select Status...",
+                            "options": [
+                                {
+                                    "label": "Available",
+                                    "value": "available",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Unavailable",
+                                    "value": "unavailable",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "availableFrom": {
+                        "show": true,
+                        "type": "FORM_DATE_FIELD",
+                        "order": 5,
+                        "properties": {
+                            "name": "availableFrom",
+                            "label": "Available From",
+                            "placeholder": "Select Date...",
+                            "format": "MM/dd/yyyy",
+                            "restrictInput": true
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "measure": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 6,
+                        "properties": {
+                            "name": "specifications.measure",
+                            "label": "Measure",
+                            "prompt": "Select Measurement...",
+                            "options": [
+                                {
+                                    "label": "Per Person",
+                                    "value": "person",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Per Desk",
+                                    "value": "desk",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Per Room",
+                                    "value": "room",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "leaseTerm": {
+                        "show": false
+                    },
+                    "minSpace": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 7,
+                        "properties": {
+                            "name": "specifications.minSpace",
+                            "label": "Desks Minimum",
+                            "numericOnly": true,
+                            "acceptDecimals": false,
+                            "placeholder": 0,
+                            "serverDataType": "INTEGER"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "maxSpace": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 8,
+                        "properties": {
+                            "name": "specifications.maxSpace",
+                            "label": "Desks Maximum",
+                            "numericOnly": true,
+                            "acceptDecimals": false,
+                            "serverDataType": "INTEGER"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "leaseType": {
+                        "show": false
+                    },
+                    "spaceType": {
+                        "show": false
+                    },
+                    "minPrice": {
+                        "show": false
+                    },
+                    "maxPrice": {
+                        "show": false
+                    },
+                    "salePrice": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 9,
+                        "properties": {
+                            "name": "specifications.salePrice",
+                            "label": "Price From",
+                            "numericOnly": true,
+                            "acceptDecimals": true,
+                            "serverDataType": "DECIMAL_CURRENCY"
+                        },
+                        "viewProperties": {
+                            "prefix": "currencyIcon",
+                            "disabled": "disablePrice",
+                            "suffix": "priceSuffix",
+                            "index": "spaceIndex"
+                        },
+                        "modifiers": {
+                            "prefix": {
+                                "prepend": "Min "
+                            }
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "contactBrokerForPrice": {
+                        "show": true,
+                        "type": "FORM_CHECKBOX",
+                        "order": 10,
+                        "properties": {
+                            "name": "specifications.contactBrokerForPrice",
+                            "label": "Contact Broker for Pricing"
+                        },
+                        "grid": {
+                            "colSize": 5
+                        },
+                        "className": "checkbox-wrapper"
+                    },
+                    "spaceSizes": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 14,
+                        "properties": {
+                            "name": "spaceSizes",
+                            "setup": {
+                                "show": true,
+                                "use": "sizesandmeasurements"
+                            }
+                        }
+                    },
+                    "includeFiles": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 15,
+                        "properties": {
+                            "name": "includeFiles"
+                        }
+                    },
+                    "video": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 16,
+                        "properties": {
+                            "name": "video",
+                            "label": "Video URL",
+                            "placeholder": "e.g. https://cbre.qumucloud.com/view/your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "walkThrough": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 17,
+                        "properties": {
+                            "name": "walkThrough",
+                            "label": "3D/Virtual Tour URL",
+                            "placeholder": "e.g. https://my.matterport.com/show/?m=your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    }
+                },
+                "lease": {
+                    "name": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 1,
+                        "properties": {
+                            "name": "nameSingle",
+                            "dbName": "name",
+                            "label": "Name",
+                            "prompt": "Select Name...",
+                            "options": [
+                                {
+                                    "label": "Hot Desks",
+                                    "value": "hot",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Fixed Desks",
+                                    "value": "fixed",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Serviced Offices",
+                                    "value": "serviced",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "spaceDescription": {
+                        "show": true,
+                        "type": "FORM_SPACE_DESC",
+                        "order": 2,
+                        "properties": {
+                            "name": "spaceDescriptionSingle",
+                            "dbName": "spaceDescription",
+                            "label": "Description"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "status": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 3,
+                        "properties": {
+                            "name": "status",
+                            "label": "Status",
+                            "prompt": "Select Status...",
+                            "options": [
+                                {
+                                    "label": "Available",
+                                    "value": "available",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Unavailable",
+                                    "value": "unavailable",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "availableFrom": {
+                        "show": true,
+                        "type": "FORM_DATE_FIELD",
+                        "order": 5,
+                        "properties": {
+                            "name": "availableFrom",
+                            "label": "Available From",
+                            "placeholder": "Select Date...",
+                            "format": "MM/dd/yyyy",
+                            "restrictInput": true
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "measure": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 6,
+                        "properties": {
+                            "name": "specifications.measure",
+                            "label": "Measure",
+                            "prompt": "Select Measurement...",
+                            "options": [
+                                {
+                                    "label": "Per Person",
+                                    "value": "person",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Per Desk",
+                                    "value": "desk",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Per Room",
+                                    "value": "room",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "leaseTerm": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 7,
+                        "properties": {
+                            "name": "specifications.leaseTerm",
+                            "label": "Lease Term",
+                            "prompt": "Select Lease Term...",
+                            "options": [
+                                {
+                                    "label": "Monthly",
+                                    "value": "monthly",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Yearly",
+                                    "value": "annually",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "minSpace": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 8,
+                        "properties": {
+                            "name": "specifications.minSpace",
+                            "label": "Desks Minimum",
+                            "numericOnly": true,
+                            "acceptDecimals": false,
+                            "placeholder": 0,
+                            "serverDataType": "INTEGER"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "maxSpace": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 9,
+                        "properties": {
+                            "name": "specifications.maxSpace",
+                            "label": "Desks Maximum",
+                            "numericOnly": true,
+                            "acceptDecimals": false,
+                            "serverDataType": "INTEGER"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "leaseType": {
+                        "show": false
+                    },
+                    "spaceType": {
+                        "show": false
+                    },
+                    "minPrice": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 10,
+                        "properties": {
+                            "name": "specifications.minPrice",
+                            "label": "Price From",
+                            "numericOnly": true,
+                            "acceptDecimals": true,
+                            "serverDataType": "DECIMAL_CURRENCY"
+                        },
+                        "viewProperties": {
+                            "prefix": "currencyIcon",
+                            "disabled": "disablePrice",
+                            "suffix": "priceSuffix",
+                            "index": "spaceIndex"
+                        },
+                        "modifiers": {
+                            "prefix": {
+                                "prepend": "Min "
+                            }
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "maxPrice": {
+                        "show": false
+                    },
+                    "salePrice": {
+                        "show": false
+                    },
+                    "contactBrokerForPrice": {
+                        "show": true,
+                        "type": "FORM_CHECKBOX",
+                        "order": 11,
+                        "properties": {
+                            "name": "specifications.contactBrokerForPrice",
+                            "label": "Contact Broker for Pricing"
+                        },
+                        "grid": {
+                            "colSize": 5
+                        },
+                        "className": "checkbox-wrapper"
+                    },
+                    "spaceSizes": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 12,
+                        "properties": {
+                            "name": "spaceSizes",
+                            "setup": {
+                                "show": true,
+                                "use": "sizesandmeasurements"
+                            }
+                        }
+                    },
+                    "includeFiles": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 13,
+                        "properties": {
+                            "name": "includeFiles"
+                        }
+                    },
+                    "video": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 14,
+                        "properties": {
+                            "name": "video",
+                            "label": "Video URL",
+                            "placeholder": "e.g. https://cbre.qumucloud.com/view/your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "walkThrough": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 15,
+                        "properties": {
+                            "name": "walkThrough",
+                            "label": "3D/Virtual Tour URL",
+                            "placeholder": "e.g. https://my.matterport.com/show/?m=your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    }
+                },
+                "salelease": {
+                    "name": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 1,
+                        "properties": {
+                            "name": "nameSingle",
+                            "dbName": "name",
+                            "label": "Name",
+                            "prompt": "Select Name...",
+                            "options": [
+                                {
+                                    "label": "Hot Desks",
+                                    "value": "hot",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Fixed Desks",
+                                    "value": "fixed",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Serviced Offices",
+                                    "value": "serviced",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "spaceDescription": {
+                        "show": true,
+                        "type": "FORM_SPACE_DESC",
+                        "order": 2,
+                        "properties": {
+                            "name": "spaceDescriptionSingle",
+                            "dbName": "spaceDescription",
+                            "label": "Description"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "status": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 3,
+                        "properties": {
+                            "name": "status",
+                            "label": "Status",
+                            "prompt": "Select Status...",
+                            "options": [
+                                {
+                                    "label": "Available",
+                                    "value": "available",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Unavailable",
+                                    "value": "unavailable",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "availableFrom": {
+                        "show": true,
+                        "type": "FORM_DATE_FIELD",
+                        "order": 5,
+                        "properties": {
+                            "name": "availableFrom",
+                            "label": "Available From",
+                            "placeholder": "Select Date...",
+                            "format": "MM/dd/yyyy",
+                            "restrictInput": true
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "measure": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 6,
+                        "properties": {
+                            "name": "specifications.measure",
+                            "label": "Measure",
+                            "prompt": "Select Measurement...",
+                            "options": [
+                                {
+                                    "label": "Per Person",
+                                    "value": "person",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Per Desk",
+                                    "value": "desk",
+                                    "order": 2
+                                },
+                                {
+                                    "label": "Per Room",
+                                    "value": "room",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "leaseTerm": {
+                        "show": true,
+                        "type": "FORM_SELECT",
+                        "order": 7,
+                        "properties": {
+                            "name": "specifications.leaseTerm",
+                            "label": "Lease Term",
+                            "prompt": "Select Lease Term...",
+                            "options": [
+                                {
+                                    "label": "Monthly",
+                                    "value": "monthly",
+                                    "order": 1
+                                },
+                                {
+                                    "label": "Yearly",
+                                    "value": "annually",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "minSpace": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 8,
+                        "properties": {
+                            "name": "specifications.minSpace",
+                            "label": "Desks Minimum",
+                            "numericOnly": true,
+                            "acceptDecimals": false,
+                            "placeholder": 0,
+                            "serverDataType": "INTEGER"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "maxSpace": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 9,
+                        "properties": {
+                            "name": "specifications.maxSpace",
+                            "label": "Desks Maximum",
+                            "numericOnly": true,
+                            "acceptDecimals": false,
+                            "serverDataType": "INTEGER"
+                        },
+                        "viewProperties": {
+                            "index": "spaceIndex"
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "leaseType": {
+                        "show": false
+                    },
+                    "spaceType": {
+                        "show": false
+                    },
+                    "minPrice": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 10,
+                        "properties": {
+                            "name": "specifications.minPrice",
+                            "label": "Price From",
+                            "numericOnly": true,
+                            "acceptDecimals": true,
+                            "serverDataType": "DECIMAL_CURRENCY"
+                        },
+                        "viewProperties": {
+                            "prefix": "currencyIcon",
+                            "disabled": "disablePrice",
+                            "suffix": "priceSuffix",
+                            "index": "spaceIndex"
+                        },
+                        "modifiers": {
+                            "prefix": {
+                                "prepend": "Min "
+                            }
+                        },
+                        "grid": {
+                            "colSize": 6
+                        }
+                    },
+                    "maxPrice": {
+                        "show": false
+                    },
+                    "salePrice": {
+                        "show": false
+                    },
+                    "contactBrokerForPrice": {
+                        "show": true,
+                        "type": "FORM_CHECKBOX",
+                        "order": 11,
+                        "properties": {
+                            "name": "specifications.contactBrokerForPrice",
+                            "label": "Contact Broker for Pricing"
+                        },
+                        "grid": {
+                            "colSize": 5
+                        },
+                        "className": "checkbox-wrapper"
+                    },
+                    "spaceSizes": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 12,
+                        "properties": {
+                            "name": "spaceSizes",
+                            "setup": {
+                                "show": true,
+                                "use": "sizesandmeasurements"
+                            }
+                        }
+                    },
+                    "includeFiles": {
+                        "show": true,
+                        "type": "CONDITIONAL_INCLUDE",
+                        "order": 13,
+                        "properties": {
+                            "name": "includeFiles"
+                        }
+                    },
+                    "video": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 14,
+                        "properties": {
+                            "name": "video",
+                            "label": "Video URL",
+                            "placeholder": "e.g. https://cbre.qumucloud.com/view/your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    },
+                    "walkThrough": {
+                        "show": true,
+                        "type": "FORM_INPUT",
+                        "order": 15,
+                        "properties": {
+                            "name": "walkThrough",
+                            "label": "3D/Virtual Tour URL",
+                            "placeholder": "e.g. https://my.matterport.com/show/?m=your-availbility"
+                        },
+                        "grid": {
+                            "colSize": 12
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "validations": {
+        "published": {
+            "propertyRecordName": {
+                "type": "STRING",
+                "required": true,
+                "messages": {
+                    "required": "A property record name is required."
+                }
+            },
+            "listingType": {
+                "type": "STRING",
+                "required": true,
+                "messages": {
+                    "required": "A listing type is required."
+                }
+            },
+            "propertyType": {
+                "type": "STRING",
+                "required": true,
+                "messages": {
+                    "required": "A property type is required."
+                }
+            },
+            "street": {
+                "type": "STRING",
+                "required": true,
+                "length": 3,
+                "messages": {
+                    "required": "A street address is required.",
+                    "length": "A street address with at least 3 characters is required."
+                }
+            },
+            "city": {
+                "type": "STRING",
+                "required": true,
+                "messages": {
+                    "required": "A city is required."
+                }
+            },
+            "postalCode": {
+                "type": "STRING",
+                "required": true,
+                "messages": {
+                    "required": "A postal code is required."
+                }
+            },
+            "headlineSingle": {
+                "type": "STRING",
+                "label": "Headline*",
+                "required": true,
+                "messages": {
+                    "required": "A headline code is required."
+                }
+            },
+            "photos": {
+                "type": "ARRAY",
+                "required": true,
+                "messages": {
+                    "required": "At least one photo is required."
+                }
+            },
+            "contacts": {
+                "type": "ARRAY",
+                "required": true,
+                "messages": {
+                    "required": "At least one contact is required."
+                }
+            },
+            "specifications": {
+                "type": "OBJECT",
+                "required": true,
+                "messages": {
+                    "required": "At least size measurement is required."
+                }
+            }
+        },
+        "unpublished": {
+            "propertyRecordName": {
+                "type": "STRING",
+                "required": true,
+                "messages": {
+                    "required": "A property record name is required."
+                }
+            }
+        }
+    },
+    "aspects": {
+        "show": true,
+        "label": "Amenities",
+        "options": [
+            {
+                "id": "hasTeaCoffee",
+                "display": "Tea and Coffee",
+                "default": true
+            },
+            {
+                "id": "hasSecurity-24hours/7days",
+                "display": "24*7 Security",
+                "default": true
+            },
+            {
+                "id": "hasElevators",
+                "display": "Lifts",
+                "default": true
+            },
+            {
+                "id": "hasFoodService-Cafeteria",
+                "display": "Food Court/Cafeteria",
+                "default": true
+            },
+            {
+                "id": "hasGym",
+                "display": "Gymnasium",
+                "default": true
+            },
+            {
+                "id": "hasParking",
+                "display": "Car Parking",
+                "default": true
+            }
+        ]
+    },
+    "headlineSingle": {
+        "show": true,
+        "label": "Headline*",
+        "required": true
+    },
+    "dataSource": {
+        "show": false,
+        "label": "Data Source*",
+        "required": false,
+        "options": [
+            {
+                "label": "Marketing Materials",
+                "value": "MarketingMaterials",
+                "selected": false
+            },
+            {
+                "label": "CBRE Broker",
+                "value": "CBREBroker",
+                "selected": false
+            },
+            {
+                "label": "CBRE Researcher",
+                "value": "CBREResearcher",
+                "selected": false
+            },
+            {
+                "label": "Listing  Agreement",
+                "value": "ListingAgreement",
+                "selected": false
+            },
+            {
+                "label": "Property Owner",
+                "value": "PropertyOwner",
+                "selected": false
+            }
+        ]
+    },
+    "energyRating": {
+        "show": true,
+        "label": "BREEAM Level",
+        "required": false,
+        "prompt": "Select Rating...",
+        "options": [
+            {
+                "label": "Acceptable",
+                "value": "Acceptable",
+                "order": 1
+            },
+            {
+                "label": "Excellent",
+                "value": "Excellent",
+                "order": 2
+            },
+            {
+                "label": "Good",
+                "value": "Good",
+                "order": 3
+            },
+            {
+                "label": "Outstanding",
+                "value": "Outstanding",
+                "order": 4
+            },
+            {
+                "label": "Pass",
+                "value": "Pass",
+                "order": 5
+            },
+            {
+                "label": "Unclassified",
+                "value": "Unclassified",
+                "order": 6
+            },
+            {
+                "label": "Very Good",
+                "value": "VeryGood",
+                "order": 7
+            }
+        ],
+        "grid": {
+            "colSize": 6
+        }
+    },
+    "epcRating": {
+        "show": true,
+        "label": "EPC Rating",
+        "required": false,
+        "prompt": "Select Rating...",
+        "options": [
+            {
+                "label": "A",
+                "value": "A",
+                "order": 1
+            },
+            {
+                "label": "A+",
+                "value": "APlus",
+                "order": 2
+            },
+            {
+                "label": "A++",
+                "value": "APlusPlus",
+                "order": 3
+            },
+            {
+                "label": "A+++",
+                "value": "APlusPlusPlus",
+                "order": 4
+            },
+            {
+                "label": "A2010",
+                "value": "A2010",
+                "order": 5
+            },
+            {
+                "label": "A2015",
+                "value": "A2015",
+                "order": 6
+            },
+            {
+                "label": "A2020",
+                "value": "A2020",
+                "order": 7
+            },
+            {
+                "label": "B",
+                "value": "B",
+                "order": 8
+            },
+            {
+                "label": "C",
+                "value": "C",
+                "order": 9
+            },
+            {
+                "label": "D",
+                "value": "D",
+                "order": 10
+            },
+            {
+                "label": "E",
+                "value": "E",
+                "order": 11
+            },
+            {
+                "label": "F",
+                "value": "F",
+                "order": 12
+            },
+            {
+                "label": "G",
+                "value": "G",
+                "order": 13
+            }
+        ],
+        "grid": {
+            "colSize": 6
+        }
+    },
+    "leedRating": {
+        "show": true,
+        "label": "LEED Level",
+        "required": false,
+        "prompt": "Select Level...",
+        "options": [
+            {
+                "label": "Certified",
+                "value": "Certified",
+                "order": 1
+            },
+            {
+                "label": "Gold",
+                "value": "Gold",
+                "order": 2
+            },
+            {
+                "label": "Platinum",
+                "value": "Platinum",
+                "order": 3
+            },
+            {
+                "label": "Pre-certificate Gold",
+                "value": "PreCertificateGold",
+                "order": 4
+            },
+            {
+                "label": "Pre-certificate Silver",
+                "value": "PreCertificateSilver",
+                "order": 5
+            },
+            {
+                "label": "Pre-certificate Platinum",
+                "value": "PreCertificatePlatinum",
+                "order": 6
+            },
+            {
+                "label": "Registered / In-progress",
+                "value": "RegisteredInProgress",
+                "order": 7
+            },
+            {
+                "label": "Silver",
+                "value": "Silver",
+                "order": 8
+            },
+            {
+                "label": "Zero Carbon",
+                "value": "ZeroCarbon",
+                "order": 9
+            },
+            {
+                "label": "Zero Energy",
+                "value": "ZeroEnergy",
+                "order": 10
+            },
+            {
+                "label": "Zero Waste",
+                "value": "ZeroWaste",
+                "order": 11
+            },
+            {
+                "label": "Zero Water",
+                "value": "ZeroWater",
+                "order": 12
+            }
+        ],
+        "grid": {
+            "colSize": 6
+        }
+    },
+    "wellRating": {
+        "show": true,
+        "label": "WELL Level",
+        "required": false,
+        "prompt": "Select Level...",
+        "options": [
+            {
+                "label": "Bronze",
+                "value": "Bronze",
+                "order": 1
+            },
+            {
+                "label": "Certified Compliant",
+                "value": "CertifiedCompliant",
+                "order": 2
+            },
+            {
+                "label": "Certified Pilot",
+                "value": "CertifiedPilot",
+                "order": 3
+            },
+            {
+                "label": "Gold",
+                "value": "Gold",
+                "order": 4
+            },
+            {
+                "label": "Platinum",
+                "value": "Platinum",
+                "order": 5
+            },
+            {
+                "label": "Pre-certified",
+                "value": "PreCertified",
+                "order": 6
+            },
+            {
+                "label": "Registered",
+                "value": "Registered",
+                "order": 7
+            },
+            {
+                "label": "Silver",
+                "value": "Silver",
+                "order": 8
+            }
+        ],
+        "grid": {
+            "colSize": 6
+        }
+    }
+}

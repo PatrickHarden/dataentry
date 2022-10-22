@@ -1,0 +1,16 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions-1.0.29",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "timerTrigger",
+      "runOnStartup": true,
+      "schedule": "%TimerInterval%",
+      "useMonitor": true,
+      "name": "myTimer"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/dataentry.Publishing.dll",
+  "entryPoint": "dataentry.Publishing.UpdatePublishedState.RunPublishCommand"
+}

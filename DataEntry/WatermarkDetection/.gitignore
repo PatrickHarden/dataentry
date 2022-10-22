@@ -1,0 +1,13 @@
+# generated dist folder
+dist/
+
+# __pycache__ 
+__pycache__/
+
+# model file if present
+wmb2.model
+
+# spec file
+classify_Single_Batch.spec
+
+

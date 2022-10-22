@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components accordion renders according to snapshot 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.div>
+        1
+      </styled.div>
+    </styled.div>
+    <styled.div
+      id={NaN}
+    >
+      Accordion Title
+    </styled.div>
+    <styled.div>
+      <styled.div />
+    </styled.div>
+  </styled.div>
+  <styled.div
+    collapsed={true}
+  >
+     
+     
+  </styled.div>
+</styled.div>
+`;

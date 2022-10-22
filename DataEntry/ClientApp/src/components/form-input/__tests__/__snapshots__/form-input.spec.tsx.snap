@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components form-input renders according to snapshot 1`] = `
+<styled.div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <FormFieldLabel
+      error={false}
+      label="Test Me!"
+      styles={Object {}}
+    />
+  </div>
+  <styled.input
+    defaultValue="Some Value"
+    error={false}
+    id="testme"
+    name="testme"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    onPaste={[Function]}
+    tabIndex={0}
+  />
+</styled.div>
+`;

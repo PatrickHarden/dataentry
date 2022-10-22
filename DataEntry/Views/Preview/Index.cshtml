@@ -1,0 +1,25 @@
+﻿@model dataentry.ViewModels.PreviewViewModel
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+window.agency365 = window.agency365 || [];
+window.agency365.push({
+    config: '@Html.Raw(Model.Config)',
+    env: 'prod',
+    renderInElementWithId: '1d721b20-ebfb-4c9f-8139-7567611bf166',
+    component: '@Model.Component',
+    path: '@Model.Path',
+    renderOmissions: {
+        Search: false,
+        Filters: false
+    },
+    breadcrumb: [],
+});
+</script>
+
+<script type="text/javascript" src="/resources/cbre-search-spa-v2/bootstrap.js" defer></script>
+
+<div id="1d721b20-ebfb-4c9f-8139-7567611bf166">
+    <div></div>
+</div>

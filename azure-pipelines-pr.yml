@@ -1,0 +1,112 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+# https://github.com/microsoft/azure-pipelines-yaml
+
+trigger: none
+
+pr:
+  - develop
+
+name: pr$(System.PullRequest.PullRequestNumber)-r$(Rev:r)
+
+variables:
+  buildConfiguration: "Release"
+  dateTime: $[format('{0:yyyy}-{0:MM}-{0:dd}T{0:HH}:{0:mm}:{0:ss}Z', pipeline.startTime)]
+
+stages:
+  - stage: Build
+    displayName: Build stage
+    jobs:
+      - job: Build
+        displayName: Build
+        pool:
+          name: "Global Listings Ubuntu"
+        steps:
+          # - bash: |
+          #     title=$(curl -s -u ${USER}:${PAT} -X GET "https://dev.azure.com/cbre/GlobalListings/_apis/build/builds/${BUILD_BUILDID}?api-version=5.1" | jq '.triggerInfo["pr.title"]')
+
+          #     if echo "$title" | grep AB#[0-9]+ -E; then
+          #       exit 0
+          #     else
+          #       echo "A work item link could not be found in the PR title. Please follow the AB#{ID} convention: https://docs.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops"
+          #       exit 1
+          #     fi
+          #   displayName: 'Ensure work item in PR title'
+          #   env:
+          #     PAT: $(PAT)
+
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: 'curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -c 5.0'
+
+          - task: UseDotNet@2
+            displayName: "Use .NET Core sdk"
+            inputs:
+              packageType: sdk
+              version: 2.2.203
+              installationPath: $(Agent.ToolsDirectory)/dotnet
+
+          - task: DotNetCoreCLI@2
+            inputs:
+              command: test
+            displayName: "dotnet test"
+
+          - task: Npm@1
+            inputs:
+              command: custom
+              customCommand: install
+              workingDir: DataEntry/ClientApp
+            displayName: "npm install"
+
+          - task: Npm@1
+            inputs:
+              command: custom
+              customCommand: run lint
+              workingDir: DataEntry/ClientApp
+            displayName: "npm lint"
+
+          - task: Npm@1
+            inputs:
+              command: custom
+              customCommand: run build
+              workingDir: DataEntry/ClientApp
+            displayName: "npm build"
+
+          - task: Npm@1
+            inputs:
+              command: custom
+              customCommand: run test:ci
+              workingDir: DataEntry/ClientApp
+            displayName: "npm test:ci"
+
+  - stage: ReporttoCBREDevops
+    displayName: Report to CBRE Devops
+    jobs:
+      - job: PostUnitTest
+        displayName: Post Unit Test
+        pool: server
+        steps:
+          - task: InvokeRESTAPI@1
+            inputs:
+              serviceConnection: metricuser
+              method: POST
+              body: |
+                {
+                "ApplicationId":786,
+                "AutomationProcessId":5,
+                "AutomationToolId":42,
+                "Description":"Unit Test XUnit",
+                "Version":"$(Build.SourceBranch)",
+                "Cycle":"$(Build.BuildNumber)",
+                "Passed":1,
+                "Failed":0,
+                "Blocked":0,
+                "StartDateTime":"$(dateTime)",
+                "EndDateTime":"$(dateTime)",
+                "Metadata":""
+                }
+              timeoutInMinutes: 1
+            continueOnError: true

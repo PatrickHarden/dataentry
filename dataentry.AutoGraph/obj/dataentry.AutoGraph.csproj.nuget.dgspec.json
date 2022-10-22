@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/zentoo/Code/dataentry/dataentry.AutoGraph/dataentry.AutoGraph.csproj": {}
+  },
+  "projects": {
+    "/Users/zentoo/Code/dataentry/dataentry.AutoGraph/dataentry.AutoGraph.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/zentoo/Code/dataentry/dataentry.AutoGraph/dataentry.AutoGraph.csproj",
+        "projectName": "dataentry.AutoGraph",
+        "projectPath": "/Users/zentoo/Code/dataentry/dataentry.AutoGraph/dataentry.AutoGraph.csproj",
+        "packagesPath": "/Users/zentoo/.nuget/packages/",
+        "outputPath": "/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/zentoo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "GraphQL": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{"query":"          
+    mutation {
+      updateListing(
+        listing: {
+          id: 3114
+          published: null
+          propertyName: "BuildingDisplayName"
+          propertyRecordName: "PropretyRecordName"
+          propertyType: "office"
+          propertySubType: ""
+          listingType: "sale"
+          street: "2100 Ross Avenue"
+          street2: "Address 2"
+          website: "http://www.propertywebsite.com/"
+          operator: ""
+          headline: "Headline"
+          video: ""
+          walkThrough: ""
+          city: "Dallas"
+          stateOrProvince: "TX"
+          postalCode: "75201"
+          lat: 32.78748575
+          lng: -96.7975825
+          floors: null
+          buildingDescription: "PropertyDescription"
+          locationDescription: "LocationDescription"
+          status: "available"
+          availableFrom: "2020-03-31T10:00:00.000Z"
+          photos: []
+          brochures: []
+          floorplans: []
+          highlights: [{order:0,value:"Highlight1"},{order:1,value:"Highlight2"}]
+          propertySizes: []
+          chargesAndModifiers: []
+          specifications: {
+            contactBrokerForPrice: false
+            leaseTerm: ""
+            leaseType: ""
+            leaseRateType: ""
+            minPrice: null
+            maxPrice: null
+            minSpace: null
+            maxSpace: null
+            totalSpace: 100
+            salePrice: 1000000
+            measure: "acre"
+            taxModifer: "None"
+            bedrooms: null
+            currencyCode: "USD"
+          }
+          microMarkets: []
+          spaces: [{id:3115,availableFrom:"2020-03-20T05:00:00.000Z",name:"Space1",spaceDescription:"Space1 Description",spaceType:"Hospitality",status:"available",specifications:{leaseTerm:"",leaseType:"",measure:"acre",minPrice:null,maxPrice:null,minSpace:null,maxSpace:null,totalSpace:1234,salePrice:20000,contactBrokerForPrice:null,currencyCode:"USD"},photos:[],floorplans:[],brochures:[]}]
+          contacts: [{contactId:3082,firstName:"Jon",lastName:"Snow",location:"Arizona - Phoenix",phone:"16025551234",email:"jon.snow@cbre.com",avatar:null,additionalFields:{license:"12345678"}}]
+          userNames: ["Joshua.Petryk@cbre.com"]
+          teamNames: []
+          aspects: []
+        }
+      )
+    {
+        published
+        id
+        propertyName
+        propertyRecordName
+        propertyType
+        listingType
+        street
+        street2
+        status
+        availableFrom
+        website
+        operator
+        headline
+        city
+        stateOrProvince
+        postalCode
+        lat
+        lng
+        buildingDescription
+        locationDescription
+        floors
+        previewSearchApiEndPoint
+        externalPreviewUrl
+        chargesAndModifiers {
+          chargeType
+          chargeModifier
+          term
+          amount
+          perUnitType
+        }
+        propertySizes{
+        sizeKind
+        measureUnit
+        amount
+      }
+        photos {
+          active
+          displayText
+          primary
+          url
+          watermark
+        }
+        floorplans {
+          active
+          displayText
+          primary
+          url
+          watermark
+        }
+        brochures {
+          active
+          displayText
+          primary
+          url
+        }
+        highlights {
+          order
+          value
+        }
+        specifications {
+          contactBrokerForPrice
+          leaseTerm
+          leaseType
+          leaseRateType
+          maxPrice
+          maxSpace
+          salePrice
+          measure
+          minPrice
+          minSpace
+          totalSpace
+          taxModifer
+          currencyCode
+          
+        }
+        microMarkets {
+          order
+          value
+        }
+        spaces {
+          id
+          availableFrom
+          name
+          spaceDescription
+          spaceType
+          status
+          specifications {
+            contactBrokerForPrice
+            leaseTerm
+            leaseType
+            maxPrice
+            maxSpace
+            measure
+            minPrice
+            minSpace
+            totalSpace
+            currencyCode
+            salePrice
+          }
+        }
+        contacts {
+          contactId
+          firstName
+          lastName
+          location
+          phone
+          email
+          avatar
+          additionalFields {
+            license
+          }
+        }
+      }
+    }
+"}

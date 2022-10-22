@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components styled-button renders according to snapshot 1`] = `
+<styled.button
+  buttonStyle="1"
+  onKeyPress={[Function]}
+  primary={false}
+  tabIndex={0}
+/>
+`;

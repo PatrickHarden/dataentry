@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormUpload renders according to snapshot 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      },
+    }
+  }
+>
+  <Memo(FormUpload)
+    accepted=".jpg, .png, .jpeg"
+    description="JPEG or PNG's only"
+    error={false}
+    field={
+      Object {
+        "defaultValue": "Some value",
+        "name": "testme",
+      }
+    }
+    files={Array []}
+    label="Test Me!"
+    name="testableUpload"
+    options={Object {}}
+    photos={Array []}
+    showPrimary={true}
+    title="Photos"
+  />
+</ContextProvider>
+`;

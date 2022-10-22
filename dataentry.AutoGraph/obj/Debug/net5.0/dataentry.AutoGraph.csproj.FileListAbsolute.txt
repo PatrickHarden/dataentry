@@ -1,0 +1,12 @@
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/bin/Debug/net5.0/dataentry.AutoGraph.deps.json
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/bin/Debug/net5.0/dataentry.AutoGraph.dll
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/bin/Debug/net5.0/ref/dataentry.AutoGraph.dll
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/bin/Debug/net5.0/dataentry.AutoGraph.pdb
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/net5.0/dataentry.AutoGraph.csproj.AssemblyReference.cache
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/net5.0/dataentry.AutoGraph.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/net5.0/dataentry.AutoGraph.AssemblyInfoInputs.cache
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/net5.0/dataentry.AutoGraph.AssemblyInfo.cs
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/net5.0/dataentry.AutoGraph.csproj.CoreCompileInputs.cache
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/net5.0/dataentry.AutoGraph.dll
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/net5.0/ref/dataentry.AutoGraph.dll
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/net5.0/dataentry.AutoGraph.pdb

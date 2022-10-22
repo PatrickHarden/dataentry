@@ -1,0 +1,12 @@
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/bin/Debug/netcoreapp2.2/dataentry.AutoGraph.deps.json
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/bin/Debug/netcoreapp2.2/dataentry.AutoGraph.runtimeconfig.json
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/bin/Debug/netcoreapp2.2/dataentry.AutoGraph.runtimeconfig.dev.json
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/bin/Debug/netcoreapp2.2/dataentry.AutoGraph.dll
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/bin/Debug/netcoreapp2.2/dataentry.AutoGraph.pdb
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/netcoreapp2.2/dataentry.AutoGraph.csprojAssemblyReference.cache
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/netcoreapp2.2/dataentry.AutoGraph.AssemblyInfoInputs.cache
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/netcoreapp2.2/dataentry.AutoGraph.AssemblyInfo.cs
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/netcoreapp2.2/dataentry.AutoGraph.csproj.CoreCompileInputs.cache
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/netcoreapp2.2/dataentry.AutoGraph.dll
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/netcoreapp2.2/dataentry.AutoGraph.pdb
+/Users/zentoo/Code/dataentry/dataentry.AutoGraph/obj/Debug/netcoreapp2.2/dataentry.AutoGraph.genruntimeconfig.cache

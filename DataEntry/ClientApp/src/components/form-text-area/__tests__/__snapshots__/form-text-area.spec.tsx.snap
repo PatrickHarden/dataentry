@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components form-text-area renders according to snapshot 1`] = `
+<styled.div>
+  <FormFieldLabel
+    error={false}
+    label="I am indeed a text area!"
+  />
+  <styled.textarea
+    defaultValue="text area goodness"
+    error={false}
+    id="testme"
+    name="testme"
+    onBlur={[Function]}
+  />
+</styled.div>
+`;

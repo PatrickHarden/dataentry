@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components mapbox renders according to snapshot 1`] = `
+<Fragment>
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css"
+    rel="stylesheet"
+  />
+  <div
+    id="map"
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  />
+</Fragment>
+`;

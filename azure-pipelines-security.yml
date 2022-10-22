@@ -1,0 +1,25 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  batch: true
+  branches:
+    include:
+      - develop
+
+pool:
+  name: "gcso-checkmarx"
+
+steps:
+- task: Application security testing@2020
+  displayName: 'Perform Security Test'
+  inputs:
+    projectName: 'GL-DataEntry-SecurityScan'
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'Checkmarx Connection'
+    customPreset: 'Checkmarx Default'
+    fullTeamName: 'CxServer\SP\Company\globallistings'
+    enableDependencyScan: false

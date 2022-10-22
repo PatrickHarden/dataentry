@@ -1,0 +1,42 @@
+html{
+    font-size: 14px;
+    body {
+        margin:0;
+        background:#fdfdfd;
+        #theWatermark {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            max-width: none;
+            opacity:.7;
+            height:15px;
+        }
+    }
+    #root{
+        position:relative;
+    }
+}
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('./assets/fonts/tt0142m_.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/tt0142m_.ttf') format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Futura Md BT Bold';
+    src: url('./assets/fonts/tt0144m_.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/tt0144m_.ttf') format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'Futura PT Book Italic';
+    src: url('./assets/fonts/tt0143m_.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/tt0143m_.ttf') format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}

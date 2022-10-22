@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components form-radiogroup renders according to snapshot 1`] = `
+<styled.div
+  id="RGtestme"
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onMouseLeave={[Function]}
+  tabIndex={0}
+>
+  <FormFieldLabel
+    error={false}
+    label="Turn up the radio!"
+  />
+  <FormRadioButton
+    changeHandler={[Function]}
+    error={false}
+    forceFocus={false}
+    key="rbkeyone"
+    label="meow"
+    name="testme"
+    optionVal="one"
+  />
+  <FormRadioButton
+    changeHandler={[Function]}
+    error={false}
+    forceFocus={false}
+    key="rbkeytwo"
+    label="bark"
+    name="testme"
+    optionVal="two"
+  />
+</styled.div>
+`;

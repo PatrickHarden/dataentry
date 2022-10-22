@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "value": "cbrelistings-dev-cin-dataentry"
+    },
+    "appServicePlan": {
+      "value": "B2"
+    },
+    "storageAccountName": {
+      "value": "cbdevcinde"
+    },
+    "keyVaultName": {
+      "value": "cbdevcinde"
+    },
+    "postgresAdminLogin": {
+      "value": "cbreadmin"
+    },
+    "StoreSettings__StoreApiServiceAccountUsername": {
+      "value": "US_SVC_GLDE_UAT"
+    },
+    "StoreSettings__HomeSiteId": {
+      "value": "us-comm"
+    },
+    "StoreSettings__ListingOrigin": {
+      "value": "US-SMPL"
+    },
+    "SearchApiEndPoint": {
+      "value": "http://actualuat.listingssearch.cbre.eu/api/propertylistings/query?"
+    },
+    "ASPNETCORE_ENVIRONMENT": {
+      "value":  "Dev"
+    },
+    "corsAllowedDomain": {
+      "value": "https://localhost:5001,https://dev-dataentry.cbrelistings.com"
+    },
+	"postgresSkuTier": {
+	  "value": "Basic"
+	},
+	"postgresSkuFamily": {
+	  "value": "Gen5"
+	},
+	"postgresSkuCapacity": {
+	  "value": "2"
+	}
+  }
+}

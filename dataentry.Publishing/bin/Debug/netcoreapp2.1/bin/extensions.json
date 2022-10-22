@@ -1,0 +1,5 @@
+{
+  "extensions":[
+    { "name": "Startup", "typeName":"dataentry.Publishing.Startup, dataentry.Publishing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"}
+  ]
+}

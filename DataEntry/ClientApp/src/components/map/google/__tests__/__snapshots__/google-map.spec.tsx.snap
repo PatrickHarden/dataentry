@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components google-map renders according to snapshot 1`] = `
+<withGoogleMap(GLGoogleMap)
+  center={
+    Object {
+      "lat": 32.7767,
+      "lng": -96.797,
+    }
+  }
+  containerElement={<styled.div />}
+  mapElement={<styled.div />}
+  zoom={12}
+/>
+`;

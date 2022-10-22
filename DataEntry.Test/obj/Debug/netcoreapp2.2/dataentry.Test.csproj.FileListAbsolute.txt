@@ -1,0 +1,43 @@
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.Views.dll
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.Views.pdb
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/web.config
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/appsettings.Dev.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/appsettings.Prod.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/appsettings.ProdIN.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/appsettings.ProdSG.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/appsettings.ProdUS.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/appsettings.UAT.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/Connected Services/Application Insights/ConnectedService.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/Services/Integration/Edp/Model/consumption_schema.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/Services/Integration/Edp/Model/ingestion_schema.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/WatermarkDetection/.gitignore
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/WatermarkDetection/classify_Single_Batch.py
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/WatermarkDetection/hooks/hook-tensorflow_core.python.py
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/WatermarkDetection/lblb2.pickle
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/WatermarkDetection/readme.md
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/xunit.runner.reporters.netcoreapp10.dll
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/xunit.runner.utility.netcoreapp10.dll
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/appsettings.test.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/appsettings.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/appsettings.Local.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/Controllers/BulkUploadControllerTest_Data/BulkUploadControllerTest_Invalid.xlsx
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/Controllers/BulkUploadControllerTest_Data/Global Listings_DataEntry_BulkUpload_Template.xlsx
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/Controllers/BulkUploadControllerTest_Data/Global Listings_DataEntry_BulkUpload_Template_FlexSpaces.xlsx
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.Test.deps.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.Test.runtimeconfig.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.Test.runtimeconfig.dev.json
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.Test.dll
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.Test.pdb
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.AutoGraph.dll
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.dll
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.pdb
+/Users/zentoo/Code/dataentry/DataEntry.Test/bin/Debug/netcoreapp2.2/dataentry.AutoGraph.pdb
+/Users/zentoo/Code/dataentry/DataEntry.Test/obj/Debug/netcoreapp2.2/dataentry.Test.csprojAssemblyReference.cache
+/Users/zentoo/Code/dataentry/DataEntry.Test/obj/Debug/netcoreapp2.2/dataentry.Test.AssemblyInfoInputs.cache
+/Users/zentoo/Code/dataentry/DataEntry.Test/obj/Debug/netcoreapp2.2/dataentry.Test.AssemblyInfo.cs
+/Users/zentoo/Code/dataentry/DataEntry.Test/obj/Debug/netcoreapp2.2/dataentry.Test.csproj.CoreCompileInputs.cache
+/Users/zentoo/Code/dataentry/DataEntry.Test/obj/Debug/netcoreapp2.2/dataentry.Test.csproj.CopyComplete
+/Users/zentoo/Code/dataentry/DataEntry.Test/obj/Debug/netcoreapp2.2/dataentry.Test.dll
+/Users/zentoo/Code/dataentry/DataEntry.Test/obj/Debug/netcoreapp2.2/dataentry.Test.pdb
+/Users/zentoo/Code/dataentry/DataEntry.Test/obj/Debug/netcoreapp2.2/dataentry.Test.genruntimeconfig.cache

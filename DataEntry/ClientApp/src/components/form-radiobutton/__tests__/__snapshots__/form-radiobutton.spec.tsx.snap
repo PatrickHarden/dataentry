@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components form-radiobutton renders according to snapshot 1`] = `
+<styled.div
+  error={false}
+  onMouseDown={[Function]}
+>
+  <styled.label>
+    <styled.input
+      checked={false}
+      className="radio-btn"
+      id="testme_undefined"
+      name="testme"
+      readOnly={true}
+      type="radio"
+    />
+    <FormFieldLabel
+      error={false}
+      label="Turn up the radio!"
+    />
+  </styled.label>
+</styled.div>
+`;

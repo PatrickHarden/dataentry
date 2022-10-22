@@ -1,0 +1,66 @@
+/*
+
+import React from 'react';
+import FormCheckboxWrapper, {Props} from '../form-checkbox-wrapper';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+
+describe('components', () => {
+
+  describe('form-checkbox-wrapper', () => {
+
+    let props:Props;
+
+    beforeEach(() => {
+        props = {
+            "data": {
+                "label": "Click Me",
+                "isSelected": true
+            },
+            "disabled": false,
+            "selected": true,
+            "checkboxProps": {
+                "label": "Click Me",
+                "styles": {
+                    "marginTop": "0px",
+                    "padding": "0px",
+                    "labelStyles": {
+                        "fontWeight": "800",
+                        "fontSize": "16px "
+                    }
+                },
+                "testId": "my-super-duper-test-checkbox"
+
+            },
+            "changeHandler": jest.fn()
+        }
+    });
+
+    // this test serves multiple purposes
+    // (1) the test id needs to pass through and be set for the test to work
+    // (2) the checkbox needs to render for the test to work
+    // (3) we can check to make sure the component is translating the value field and setting the checkbox to selected properly
+    /*
+    it('shows the expected label', () => {
+        render(<FormCheckboxWrapper {...props}/>);
+        const checkbox:HTMLElement = screen.getByTestId("my-super-duper-test-checkbox");
+        expect((checkbox as HTMLInputElement).checked).toBe(true);
+    });
+
+    // simulate a click to see if the change handler is called as expected
+    it('handles selecting the checkbox and returning changed data', () => {
+        const changeHandler = jest.fn(data => data);
+        props.changeHandler = changeHandler;
+        render(<FormCheckboxWrapper {...props}/>);
+        const checkbox:HTMLElement = screen.getByTestId("my-super-duper-test-checkbox");
+        userEvent.click(checkbox);
+        // check the change handler function to see if it was called
+        expect(changeHandler.mock.results.length).toBe(1);
+        // check the value on the result to ensure that the value has been deselected
+        // this checkes on isSelected, because thats the property we indicate to hold the selection value in the object
+        expect(changeHandler.mock.results[0].value.isSelected).toBe(false);
+    });
+
+  });
+});
+*/

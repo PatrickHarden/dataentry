@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "TimerInterval":  "0 */5 * * * *",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "SearchApiEndPoint" : "http://actualuat.listingssearch.cbre.eu/api/propertylistings/query?",
+    "HomeSiteId": "us-comm",
+    "SearchKey": "Common.PrimaryKey",
+    "ListingOrigin": "SG-SMPL",
+    "ExpirationTimeInMin": "1440" 
+  },
+  "ConnectionStrings": {
+    "PublishingPostgres": "host=localhost;port=5432;database=DataEntry;user id=postgres;password=password"
+  }
+}

@@ -1,0 +1,55 @@
+﻿@*
+    This login page is build only for selenium automation test
+*@
+
+@{
+    string baseUrl = $"https://{Context.Request.Host.Value}";
+}
+
+<h1>Login</h1>
+
+<form onsubmit="return login(event)">
+    <label for="username">UserName</label>
+    <input type="text" id="username" title="UserName" />
+    <label for="password">Password</label>
+    <input type="text" id="password" title="Password" />
+    <input type="submit" value="Submit" />
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    function login(event) {
+        var nonce = 'e3fd62f2-78f3-46fb-874f-ebe5985194ed';
+
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: '@Url.Action("Login", "Account")',
+            dataType: "json",
+            data: JSON.stringify({
+                username: $('#username').val(),
+                password: $('#password').val(),
+                nonce: nonce
+            }),
+            error: function (result) {
+                // TODO: show error
+                console.log("error");
+            },
+            success: function (result) {
+                // set local storage with token
+                localStorage.setItem('adal.login.request', '@baseUrl');
+                localStorage.setItem('adal.token.keys', result.clientId);
+                localStorage.setItem('adal.state.login', '95933b0f-7ec2-45d3-9892-ce56ec31bef2||');
+                localStorage.setItem('adal.nonce.idtoken', `${nonce}||`);
+
+                // navigate to base domain with new token
+                window.location.href = `/#id_token=${result.token}&state=95933b0f-7ec2-45d3-9892-ce56ec31bef2&session_state=${result.sessionState}`;
+            }
+        });
+
+        // return false to prevent default behavior
+        return false;
+    }
+</script>

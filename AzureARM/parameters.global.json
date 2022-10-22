@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "value": "cbrelistings-prod-global-dataentry"
+    },
+    "appServicePlan": {
+      "value": "P1V2"
+    },
+    "storageAccountName": {
+      "value": "cbprodglde"
+    },
+    "keyVaultName": {
+      "value": "cbprodglde"
+    },
+    "postgresAdminLogin": {
+      "value": "cbreadmin"
+    },
+    "StoreSettings__StoreApiServiceAccountUsername": {
+      "value": "US_SVC_GLDE_PROD"
+    },
+    "StoreSettings__HomeSiteId": {
+      "value": "nl-comm"
+    },
+    "StoreSettings__ListingOrigin": {
+      "value": "NL-GLDE"
+    },
+    "SearchApiEndPoint": {
+      "value": "http://actualwww.listingssearch.cbre.eu/api/propertylistings/query?"
+    },
+    "app-Admins": {
+      "value": "jason.raby@cbre.com;Ryan.Shaughnessy@cbre.com;brian.miller2@cbre.com;chuck.self@cbre.com"
+    },
+    "ASPNETCORE_ENVIRONMENT": {
+      "value": "Prod"
+    },
+    "corsAllowedDomain": {
+      "value": "https://manage.cbrelistings.com"
+    },
+	"postgresSkuTier": {
+	  "value": "GeneralPurpose"
+	},
+	"postgresSkuFamily": {
+	  "value": "Gen5"
+	},
+	"postgresSkuCapacity": {
+	  "value": "2"
+	}
+  }
+}

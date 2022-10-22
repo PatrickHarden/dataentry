@@ -1,0 +1,51 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:46150",
+      "sslPort": 44392
+    }
+  },
+  "profiles": {
+    "dataentry-local": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Local",
+        "APPINSIGHTS_INSTRUMENTATIONKEY": ""
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "dataentry-dev": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "KEYVAULT_ENDPOINT": "https://dev-dataentry.vault.azure.net/",
+        "ASPNETCORE_ENVIRONMENT": "Dev",
+        "APPINSIGHTS_INSTRUMENTATIONKEY": "c0a775ab-fec7-4e0c-a811-d187b257491c"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "dataentry-stg": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "KEYVAULT_ENDPOINT": "https://stg-dataentry.vault.azure.net/",
+        "ASPNETCORE_ENVIRONMENT": "Staging",
+        "APPINSIGHTS_INSTRUMENTATIONKEY": ""
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "dataentry-prd": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "KEYVAULT_ENDPOINT": "https://prd-dataentry.vault.azure.net/",
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "APPINSIGHTS_INSTRUMENTATIONKEY": ""
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+}
